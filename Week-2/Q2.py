@@ -11,6 +11,6 @@ for i in alist:
         adict[i]+=1
     else:
         adict[i]=1
-adict=sorted(adict.values(),reverse=True)
+adict=dict(sorted(adict.items(), key=lambda item:item[1],reverse=True))
 for i,j in adict.items():
     print(f"'{i}':{j}")
