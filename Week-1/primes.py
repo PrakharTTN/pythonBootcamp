@@ -7,6 +7,7 @@ def is_prime(num):
     else:
         return True
 
-num=int(input("Enter the number: "))
-print(is_prime(num))
+if __name__=="__main__":
+    num=int(input("Enter the number: "))
+    print(is_prime(num))
 
