@@ -3,23 +3,27 @@ import time
 import argparse
 import fnmatch
 
-def find_files(directory, name=None,type=None,atime=None,maxdepth=None):
-    results=[]
+
+def find_files(directory=None, name=None,type=None,atime=None,maxdepth=None):
+    results=[]          #Final result list. It'll have all the desired outputs
     current_time= time.time()
-    directory = os.path.abspath(directory)
+    if directory is None:
+        directory=os.getcwd()  #if directory is None or not provided, take current dir as directory
+
+    directory = os.path.abspath(directory)  # make sure directory is absolute directory
     if atime is not None:
-        atime=atime*60400
+        atime=atime*86400           # convert days to seconds
 
     def dir_search(directory,atime,type,depth=0):
             
-            if maxdepth is not None and depth>maxdepth:
+            if maxdepth is not None and depth>maxdepth: #break condition when maxdepth reached
                 return
             try:
                 if type=='f' or type is None:
                     for i in os.listdir(directory):
-                        full_path=os.path.join(directory,i)
+                        full_path=os.path.join(directory,i) 
                         
-                        if os.path.isfile(full_path) and (name is None or fnmatch.fnmatch(i,name) and (atime is None or atime>(current_time-os.path.getatime(full_path)))):
+                        if os.path.isfile(full_path) and (name is None or fnmatch.fnmatch(i,name) and (atime is None or atime>(current_time-os.path.getatime(full_path)))): 
                             results.append(full_path)
                             
                         elif os.path.isdir(full_path):
