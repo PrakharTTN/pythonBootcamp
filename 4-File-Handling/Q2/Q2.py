@@ -47,4 +47,5 @@ def extract():
     }
 
 info= extract()
-print(json.dumps(info, indent=5))
+with open("results.json",'w+') as f:
+    json.dump(info,f,indent=4)
