@@ -1,3 +1,16 @@
+"""Q3) Read about itertools.count(start=0, step=1) function which accepts options arguments  
+start and end.
+Based on this, implement a similar `datecount(start, step)`
+where start is a  `datetime.date`  object and 
+step  can we string values 'alternative', 'daily',  'weekly', 'monthly',   'Quarterly', 'yearly' 
+(ignore case)
+
+example execution:
+>> dc = datecount(step='weekly')
+>> for i in range(10):
+    	print (next(dc))"""
+
+
 import datetime
 from dateutil.relativedelta import relativedelta
 import itertools

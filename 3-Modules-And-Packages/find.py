@@ -1,3 +1,18 @@
+"""Q4) Implement  below options:
+
+`-name`
+`-atime`
+`-type`
+`-maxdepth`
+
+Example use:
+
+To find all ".py" files (not folders) in home directory and 2 level sub-directories which were created recently in last 7 days write
+
+find.py ~/ -name "*.py" -type f -atime -7
+"""
+
+
 import os
 import time
 import argparse
