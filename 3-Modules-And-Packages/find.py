@@ -39,23 +39,31 @@ def find_files(directory=None, name=None,type=None,atime=None,maxdepth=None):
                     for i in os.listdir(directory):
                         full_path=os.path.join(directory,i) 
                         
+                        #This block of code searches the path and checks if it is a file and matches the arguments provided
+                        #Used fnmatch.fnmatch to ensure the file name provided matches and edge cases like '*.py','a?.py' are handled
+                        #Converted atime from days to seconds and checked whether the time elapsed after modifying the file is less than given time
+                        
                         if os.path.isfile(full_path) and (name is None or fnmatch.fnmatch(i,name) and (atime is None or atime>(current_time-os.path.getatime(full_path)))): 
                             results.append(full_path)
-                            
+                        
+                        #Creating a recursion to ensure every path is searched till the maxdepth of directory is reached
                         elif os.path.isdir(full_path):
                             dir_search(full_path,atime,type,depth+1)
 
-                elif type =='d':
+                elif type =='d': #To check if they want to search for a directory
 
                     for i in os.listdir(directory):
                         full_path=os.path.join(directory,i)
                         
+                        #To check if the path is directory and matches the parameters provided in the arguments
                         if os.path.isdir(full_path) and (name is None or fnmatch.fnmatch(i,name) and (atime is None or atime>(current_time-os.path.getatime(full_path)))):
-                            results.append(full_path)
-                            
+                            results.append(full_path) #Append the path if the conditions are met
+                        
+                        #Else continue with the recursion 
                         elif os.path.isdir(full_path):
                             dir_search(full_path,atime,type,depth+1)
 
+            #If a directory requires sudo priveleges, ignore that path
             except PermissionError:
                 pass
 
@@ -63,18 +71,31 @@ def find_files(directory=None, name=None,type=None,atime=None,maxdepth=None):
     return results
 
 if __name__ == "__main__":
+
+    #Create a parser to parse the command-line arguments
     parser = argparse.ArgumentParser(description="Find files in a directory with various filters.")
-    parser.add_argument("directory")
+
+    #Added arguments for the parser
+    parser.add_argument("directory", help="The directory which you want as the starting point, default = current working dir")
     parser.add_argument("-name", type=str, help="Filter by filename (supports wildcards like '*.txt').")
     parser.add_argument("-type", type=str, help="Filter by file extension (e.g., 'txt' for .txt files).")
     parser.add_argument("-atime", type=int, help="Find files accessed within the last N seconds.")
     parser.add_argument("-maxdepth", type=int, help="Maximum depth for recursive search.")
 
+
+    #Parse the args and return the results from function in a list variable
     args = parser.parse_args()
     results = find_files(args.directory, args.name, args.type, args.atime, args.maxdepth)
+
 
     if results:
         for i in results:
             print(i)
     else:
         print("No results found.")
+
+    '''Output: >>>python3 find.py <dir> -name="*.py" -maxdepth 1
+    /<dir>/hey.py
+    /<dir/library/module.py
+    ...
+    '''
