@@ -1,6 +1,6 @@
-#Programing: From a multi-words and multi-line string, prepare a filter the list of 
-# words which have multiple occurances in string. 
-# output: Python Using the triple quotes one and to a multiline string. at
+""" Q3. Programing: From a multi-words and multi-line string, prepare a filter the list of 
+ words which have multiple occurances in string. 
+ output: Python Using the triple quotes one and to a multiline string. at """
 
 astring = """Python Multiline String Using Triple-Quotes Using the triple quotes style is one of the 
 easiest and most common ways to split a large string into a multiline Python string. 

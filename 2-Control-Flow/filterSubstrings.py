@@ -1,6 +1,6 @@
-# Write a code to filter all sub-strings which has even number of vowel?
-# example Input: "I have an input string which contains even and odd numbers of vowels aA aa aaa ae aeo”
-#  output: I an string which contains and odd of aaa aeo
+"""Q1. Write a code to filter all sub-strings which has even number of vowel?
+ example Input: "I have an input string which contains even and odd numbers of vowels aA aa aaa ae aeo”
+ output: I an string which contains and odd of aaa aeo"""
 
 input_string='I have an input string which contains even and odd numbers of vowels aA aa aaa ae aeo'
 final_string=""
