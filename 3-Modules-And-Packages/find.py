@@ -34,6 +34,7 @@ def find_files(directory=None, name=None,type=None,atime=None,maxdepth=None):
             if maxdepth is not None and depth>maxdepth: #break condition when maxdepth reached
                 return
             try:
+                # if -type is f or it is not there (default), code to search the file
                 if type=='f' or type is None:
                     for i in os.listdir(directory):
                         full_path=os.path.join(directory,i) 

@@ -1,3 +1,20 @@
+"""Q2. Write a code to read a "Python_script.py" as input file and extract following information to prepare a JSON
+
+* all package name which the input Python script use
+* all function name which the  input Python script define
+* all class name which the  input Python script define
+* all the variable name  which the input Python script define
+
+example output:
+{
+"package": ["os", "itertools"],
+"funation": ["function1", "function2"],
+"class": ["classA", "classB"],
+"variable": ["num", "i", "j"]
+}
+"""
+
+
 import os
 import json
 import keyword
