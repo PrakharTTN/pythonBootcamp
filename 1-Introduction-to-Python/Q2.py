@@ -1,1 +1,0 @@
-print("Information"[2::2])

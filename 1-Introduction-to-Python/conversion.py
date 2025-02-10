@@ -1,3 +1,7 @@
+"""Write a code to print binary, octal or hexa-decimal presentation of a number. 
+Do not use any third party library.
+"""
+
 def toBinary(n):
     output = ""
     while (n>0):

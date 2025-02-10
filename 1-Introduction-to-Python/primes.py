@@ -1,3 +1,8 @@
+"""Write a Python script to test if a number is prime or not? - 
+The Script name: primes.py - Add a functions is_prime() which return boolean True or False - 
+Program should accept a number from console
+"""
+
 def is_prime(num):
     if num<=1:
         return False
