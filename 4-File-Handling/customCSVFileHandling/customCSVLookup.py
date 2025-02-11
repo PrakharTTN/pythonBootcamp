@@ -12,7 +12,7 @@ def guess_delimiter(content):
     
     return max(delimiter_dict, key=delimiter_dict.get)
 
-def parse_csv(file, delimiter=None, skip_rows=0, head_rows=None, tail_rows=None, columns=None):
+def parsecsv(file, delimiter=None, skiprows=0, headrows=None, tailrows=None, columns=None):
     with open(file, 'r') as file:
         lines = file.readlines()
 
@@ -27,8 +27,8 @@ def parse_csv(file, delimiter=None, skip_rows=0, head_rows=None, tail_rows=None,
         data = [header.split(delimiter)]
 
     #skip the first N rows if needed
-    if skip_rows:
-        datalines = datalines[skip_rows:]
+    if skiprows:
+        datalines = datalines[skiprows:]
 
     for line in datalines:
         line = line.strip()
@@ -47,12 +47,12 @@ def parse_csv(file, delimiter=None, skip_rows=0, head_rows=None, tail_rows=None,
         data = [[row[i] for i in columns if i < len(row)] for row in data]
 
     #only return the first N rows
-    if head_rows:
-        data = data[:head_rows]
+    if headrows:
+        data = data[:headrows]
 
     #only return the last N rows
-    if tail_rows:
-        data = data[-tail_rows:]
+    if tailrows:
+        data = data[-tailrows:]
 
     return data
 
@@ -71,9 +71,9 @@ def print_table(data):
 
 def main():
     delimiter = None
-    skip_rows = 0
-    head_rows = None
-    tail_rows = None
+    skiprows = 0
+    headrows = None
+    tailrows = None
     columns = None
     file = "email.csv"
 
@@ -85,11 +85,11 @@ def main():
         if arg == '-d':
             delimiter = args.pop(0)
         elif arg == '--skip-row':
-            skip_rows = int(args.pop(0))
+            skiprows = int(args.pop(0))
         elif arg == '--head':
-            head_rows = int(args.pop(0))
+            headrows = int(args.pop(0))
         elif arg == '--tail':
-            tail_rows = int(args.pop(0))
+            tailrows = int(args.pop(0))
         elif arg == '-f':
             columns = args.pop(0)
         else:
@@ -99,7 +99,7 @@ def main():
         print("Error: Please provide a CSV file.")
         return
 
-    data = parse_csv(file, delimiter, skip_rows, head_rows, tail_rows, columns)
+    data = parsecsv(file, delimiter, skiprows, headrows, tailrows, columns)
     print_table(data)
 
 if __name__ == '__main__':
