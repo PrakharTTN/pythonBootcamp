@@ -21,28 +21,27 @@ import fnmatch
 
 def find_files(directory=None, name=None,type=None,atime=None,maxdepth=None):
     results=[]          #Final result list. It'll have all the desired outputs
-    current_time= time.time()
+    current_time= time.time()   
+    
+    #if directory is None or not provided, take current dir as directory
     if directory is None:
-        directory=os.getcwd()  #if directory is None or not provided, take current dir as directory
+        directory=os.getcwd()  
 
-    directory = os.path.abspath(directory)  # make sure directory is absolute directory
+    #Make sure directory is absolute directory and time is in seconds
+    directory = os.path.abspath(directory) 
     if atime is not None:
-        atime=atime*86400           # convert days to seconds
+        atime=atime*86400 
 
     def dir_search(directory,atime,type,depth=0):
-            
-            if maxdepth is not None and depth>maxdepth: #break condition when maxdepth reached
-                return
-            try:
-                # if -type is f or it is not there (default), code to search the file
-                if type=='f' or type is None:
-                    for i in os.listdir(directory):
-                        full_path=os.path.join(directory,i) 
-                        
+        if maxdepth is not None and depth>maxdepth: #break condition when maxdepth reached
+            return
+        try:
+            # if -type is f or it is not there (default), code to search the file
+            for i in os.listdir(directory):
+                    full_path=os.path.join(directory,i) 
+                    if type=='f' or type is None:
+                    
                         #This block of code searches the path and checks if it is a file and matches the arguments provided
-                        #Used fnmatch.fnmatch to ensure the file name provided matches and edge cases like '*.py','a?.py' are handled
-                        #Converted atime from days to seconds and checked whether the time elapsed after modifying the file is less than given time
-                        
                         if os.path.isfile(full_path) and (name is None or fnmatch.fnmatch(i,name) and (atime is None or atime>(current_time-os.path.getatime(full_path)))): 
                             results.append(full_path)
                         
@@ -50,25 +49,21 @@ def find_files(directory=None, name=None,type=None,atime=None,maxdepth=None):
                         elif os.path.isdir(full_path):
                             dir_search(full_path,atime,type,depth+1)
 
-                elif type =='d': #To check if they want to search for a directory
-
-                    for i in os.listdir(directory):
-                        full_path=os.path.join(directory,i)
-                        
+                    elif type =='d':
                         #To check if the path is directory and matches the parameters provided in the arguments
                         if os.path.isdir(full_path) and (name is None or fnmatch.fnmatch(i,name) and (atime is None or atime>(current_time-os.path.getatime(full_path)))):
-                            results.append(full_path) #Append the path if the conditions are met
+                            results.append(full_path) 
                         
                         #Else continue with the recursion 
                         elif os.path.isdir(full_path):
                             dir_search(full_path,atime,type,depth+1)
 
-            #If a directory requires sudo priveleges, ignore that path
-            except PermissionError:
-                pass
+        #If a directory requires sudo priveleges, ignore that path
+        except PermissionError:
+            pass
 
     dir_search(directory,atime,type,depth=0)
-    return results
+    return results  
 
 if __name__ == "__main__":
 
