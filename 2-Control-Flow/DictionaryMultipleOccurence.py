@@ -8,7 +8,7 @@ Using the triple quotes style is one of the easiest and most common ways to spli
 #Converting String to List with Proper Formatting
 alist=astring.replace('\n','').split(" ",-1)
 adict={}
-
+list = [{'word':'python', 'length':6, 'occur':4},{}]
 #Adding key from list if unique else incrementing its value
 for i in alist:
     if i in adict.keys():
@@ -26,4 +26,4 @@ The         3               4
 print("Word\t\t Length\t\t Occurence")
 for i, j in adict.items():
     if(j>1):
-        print(i,"\t\t",len(i),'\t\t',j)
+        list.append({'word':i,'length':len(i),'occurence':j})
