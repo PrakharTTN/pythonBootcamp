@@ -1,17 +1,11 @@
-'''Q1. Write an object oriented code in Python, to download Gmail with attachments .
+'''Q2. In download email assignment,
 
-Create a "Emails.json"  file
+Provision to download only selective email. For example:
 
-In  "Emails.json"  file,  using Python `pickle`  module, dump following information:
+- To download only emails which have attachments
+- To download only email which are related to Job
+- To download only the email which have picture attached
 
-- subject
-- date
-- from email
-- number of words and line in email body
-- number of attachments
-- name of attachments
-
-Each like in "Email.json" should be a valid JSON
 '''
 
 import yaml
@@ -20,6 +14,7 @@ import email
 import pickle
 import json
 from email.header import decode_header
+import argparse
 
 class emailEnvironment:
 
@@ -154,6 +149,7 @@ a=emailEnvironment()
 #2. To download only email which are related to Job
 #3. To download only the email which have picture attached
 
+parser=argparse.ArgumentParser("This is to parse provisions to downloader.")
 print("1. To download Emails with Attachments \n2. To download only email which are related to Job\n3. To download only the email which have picture attached")
 n=int(input("Enter the case: "))
 match n:
