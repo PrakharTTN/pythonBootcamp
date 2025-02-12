@@ -77,9 +77,9 @@ if __name__ == "__main__":
 
     #Added arguments for the parser
     parser.add_argument("directory", help="The directory which you want as the starting point, default = current working dir")
-    parser.add_argument("-name", type=str, help="Filter by filename (supports wildcards like '*.txt').")
+    parser.add_argument("-name", type=str, help="Filter by filename (supports like '*.txt').")
     parser.add_argument("-type", type=str, help="Filter by file extension (e.g., 'txt' for .txt files).")
-    parser.add_argument("-atime", type=int, help="Find files accessed within the last N seconds.")
+    parser.add_argument("-atime", type=int, help="Find files accessed within the last days.")
     parser.add_argument("-maxdepth", type=int, help="Maximum depth for recursive search.")
 
 
