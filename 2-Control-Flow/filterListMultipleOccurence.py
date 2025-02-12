@@ -16,7 +16,7 @@ afinallist=[]
 
 #Adding keys to a dictionary from List, incrementing if already exists
 for i in alist:
-    if i in adict.keys():
+    if i in adict:
         adict[i]+=1
     else:
         adict[i]=1

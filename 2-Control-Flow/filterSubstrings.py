@@ -7,8 +7,9 @@ input_string='I have an input string which contains even and odd numbers of vowe
 #Creating an empty string
 final_string=""
 
+
 #Splitting the string into list
-input_list=input_string.split(' ',-1)
+input_list=input_string.lower().split(' ',-1)
 
 #Declaring vowels in a list
 vowels=['a','e','i','o','u']
@@ -17,11 +18,11 @@ vowels=['a','e','i','o','u']
 for i in input_list:
     ctr=0
     #Iterating each letter from the element in the list and if it is in vowels, incrementing ctr
-    for k in i.lower():
+    for k in i:
         if k in vowels:
             ctr+=1
     #After iterating through each letter, checking whether the word had odd vowels.
-    if ctr==1 or ctr%2!=0:
+    if ctr%2!=0:
         final_string+=i+' '
 #Since sample output had odd vowels, we filter out all the even ones
 print(final_string)
