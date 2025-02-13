@@ -2,16 +2,16 @@
 only one instance of the class can be created.'''
 
 class Database:
+    has_obj=None
     def __new__(cls):
-        if not hasattr(cls,'instance'):
-            cls.instance=super(Database,cls).__new__(cls)
-            print("Creating one and only database instance")
+        if cls.has_obj==None:
+            cls.has_obj=super().__new__(cls)
+            print("The first instance has been creeated")
         else:
-            print("Instance already exists, returning the created one.")
-        return cls.instance
-
-
-obj1=Database()
+            print("The instance already exists.")
+        return cls
+    
+obj1=Database() 
 obj2=Database()
 print("Unique ID of obj1: ",id(obj1))
 print("Unique ID of obj2: ",id(obj2))
