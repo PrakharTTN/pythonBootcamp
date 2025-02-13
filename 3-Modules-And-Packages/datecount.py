@@ -40,7 +40,7 @@ def datecount(start, step):
         step_days = step_dict[step]
         while True:
             yield start
-            start += datetime.timedelta(days=step_days)
+            start += relativedelta(days=step_days)
 
     #Used relativedelta to ensure proper dates are taken for months, quarters and years, if days are hard-coded, it is prone to errors like leap-years
     else:
