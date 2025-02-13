@@ -1,4 +1,4 @@
-import sys
+import argparse
 
 def guess_delimiter(content):
     delimiter_dict = {
@@ -44,14 +44,15 @@ def parsecsv(file, delimiter=None, skiprows=0, headrows=None, tailrows=None, col
     #filter the data to only those columns
     if columns:
         columns = [int(c) - 1 for c in columns.split(',')]  # Convert to 0-based indexing
+        for row in data:
+            for i in columns:
+                if i<len(row):
+                    data=row[i]
         data = [[row[i] for i in columns if i < len(row)] for row in data]
 
-    #only return the first N rows
     if headrows:
         data = data[:headrows]
-
-    #only return the last N rows
-    if tailrows:
+    elif tailrows:
         data = data[-tailrows:]
 
     return data
@@ -61,45 +62,33 @@ def print_table(data):
         print("No data to display.")
         return
 
-    #calculate the max width of each column for pretty printing
-    column_widths = [max(len(str(item)) for item in column) for column in zip(*data)]
+    # Determine column widths without using zip(*data)
+    num_columns = len(data[0])
+    column_widths = [0] * num_columns
 
-    #print each row
     for row in data:
-        row_string = "  ".join(str(item).ljust(column_widths[i]) for i, item in enumerate(row))
-        print(row_string)
+        for i, item in enumerate(row):
+            column_widths[i] = max(column_widths[i], len(str(item)))
+
+    # Print each row
+    for row in data:
+        print("  ".join(str(item).ljust(column_widths[i]) for i, item in enumerate(row)))
+
 
 def main():
-    delimiter = None
-    skiprows = 0
-    headrows = None
-    tailrows = None
-    columns = None
-    file = "email.csv"
+    parser = argparse.ArgumentParser(description="Process a CSV file.")
+    
+    # Define the arguments
+    parser.add_argument('file', help="CSV file to process.")
+    parser.add_argument('-d', '--delimiter', help="Delimiter for the CSV file.")
+    parser.add_argument('--skip-row', type=int, default=0, help="Number of rows to skip at the beginning.")
+    parser.add_argument('--head', type=int, help="Number of rows to display from the start.")
+    parser.add_argument('--tail', type=int, help="Number of rows to display from the end.")
+    parser.add_argument('-f', '--columns', help="Columns to shpw.")
 
-    args = sys.argv[1:]
-
-    # Parse the command-line arguments
-    while args:
-        arg = args.pop(0)
-        if arg == '-d':
-            delimiter = args.pop(0)
-        elif arg == '--skip-row':
-            skiprows = int(args.pop(0))
-        elif arg == '--head':
-            headrows = int(args.pop(0))
-        elif arg == '--tail':
-            tailrows = int(args.pop(0))
-        elif arg == '-f':
-            columns = args.pop(0)
-        else:
-            file = arg
-
-    if not file:
-        print("Error: Please provide a CSV file.")
-        return
-
-    data = parsecsv(file, delimiter, skiprows, headrows, tailrows, columns)
+    # Parse the arguments
+    args = parser.parse_args()
+    data = parsecsv(args.file, args.delimiter, args.skiprows, args.headrows, args.tailrows, args.columns)
     print_table(data)
 
 if __name__ == '__main__':
