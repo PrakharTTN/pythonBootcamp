@@ -21,6 +21,10 @@ Implement a Prime class which should have following funcnatinality:
 Prime(11)
 
 implement `__repr__()`  and `__str__() methods'''
+
+
+
+
 class Prime:
     def __init__(self, initial, final):
         self.initial = initial
@@ -51,6 +55,8 @@ class Prime:
         If steps given: generate n primes before self.final
         lest generate till smallest prime'''
         primes = []
+        if steps:
+            self.greater_than(self,steps)
         for i in range(2, self.final):
             if self.is_prime(i):
                 primes.append(i)
