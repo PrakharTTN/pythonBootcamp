@@ -3,18 +3,16 @@ from requests.exceptions import *
 
 
 class RequestHandling:
-    def __init__(self, url):
-        self.url = url
-
-    def get(self,header,timeout=10,payload=None):
+   
+    def get(url, self,header,timeout=10,payload=None):
         '''Implements the get'''
         try:
             if payload:
-                response = requests.get(self.url, params = payload, timeout=timeout)
+                response = requests.get(url, params = payload, timeout=timeout)
             else:
                 response = requests.get(url=self.url,headers=header,timeout=timeout)
             response.raise_for_status() 
-            return response
+            return response.json
             
             '''Handling all the exceptions here'''
         except requests.exceptions.InvalidHeader as error:
@@ -46,10 +44,10 @@ class RequestHandling:
         }
         return error_dict.get(error_code)
 
-singlerequest = RequestHandling("http://www.google.com")
-final = singlerequest.get(header={},timeout=10)
+singlerequest = RequestHandling()
+final = singlerequest.get(url="http://www.google.com",header={},timeout=10)
 
 if final:
     print("Success:", final)
 else:
-    print("Failed to retrieve content.")
+    print("No content.")
