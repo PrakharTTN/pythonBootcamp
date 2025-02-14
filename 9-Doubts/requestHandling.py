@@ -1,5 +1,6 @@
 import requests
 from requests.exceptions import *
+import json
 
 
 class RequestHandling:
@@ -48,6 +49,6 @@ singlerequest = RequestHandling()
 final = singlerequest.get(url="http://www.google.com",header={},timeout=10)
 
 if final:
-    print("Success:", final)
+    print("Success:", json.dumps(final,indent=4))
 else:
     print("No content.")
