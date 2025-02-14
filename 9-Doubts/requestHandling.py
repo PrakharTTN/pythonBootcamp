@@ -1,9 +1,6 @@
 import requests
 from requests.exceptions import *
 
-class exceptions:
-    timeoutError="Timeout Error: Request timed out."
-    badRequest="Error badRequest"
 class requestHandling:
     def __init__(self, url):
         self.url = url
