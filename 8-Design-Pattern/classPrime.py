@@ -22,9 +22,6 @@ Prime(11)
 
 implement `__repr__()`  and `__str__() methods'''
 
-
-
-
 class Prime:
     def __init__(self, initial, final):
         self.initial = initial
