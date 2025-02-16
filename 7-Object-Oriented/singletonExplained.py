@@ -10,7 +10,7 @@ class Database:
     
     @classmethod
     def refdel(cls):
-        cls.has_obj=None
+        cls.has_obj = None
 
 # Create instances of Database
 db1 = Database()
