@@ -7,7 +7,6 @@ from npi_ids import all_npi_ids
 url = "https://npiregistry.cms.hhs.gov/RegistryBack/npiDetails"
 
 npi_ids = [i for i in all_npi_ids if i.isdigit() and len(i) == 10]
-print(npi_ids)
 
 
 def send_post_request(npi_id):
@@ -26,7 +25,7 @@ def send_post_request(npi_id):
 #used threads to execute requests faster
 with concurrent.futures.ThreadPoolExecutor(max_workers=25) as executor:
     results = list(executor.map(send_post_request, npi_ids))
-    
+
 #dumped the list into json file
 with open("scraped.json", "w") as my_file:
     json.dump(results, my_file, indent=4)
