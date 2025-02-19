@@ -6,7 +6,7 @@ class MathOperation:
     def add(self, *args):
         return sum(args) 
 
-obj1=MathOperation()
+obj1 = MathOperation()
 print(obj1.add(1,2))
 print(obj1.add(1,2,3))
 print(obj1.add(1,2,3,4))
