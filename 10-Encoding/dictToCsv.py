@@ -2,6 +2,7 @@ import io
 
 def dict_to_comma():
     '''This block of code uses an io string to imitate a file and writes the dictionary into comma seperated string'''
+    
     output_string=io.StringIO()
     data={"name": "Alice", "age": 30, "city": "New York"}
     
