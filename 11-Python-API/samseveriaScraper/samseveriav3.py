@@ -43,7 +43,7 @@ class Scraper:
         ["combo", "clump", "leaf", "plant"]"""
         for name in self.type_pattern.findall(all_types):
             if name.lower() in self.type_plant:
-                return name
+                return name.title()
         return "Plant"
 
     def extract_price(self, product):
@@ -52,12 +52,20 @@ class Scraper:
         price = product.find("span", class_="price")
         return price.text if price else "N/A"
 
-    def scrape_product(self, url, is_combo):
-        """In this we scrape each individual product on the page"""
+    def cook_soup(self, url):
         try:
             webpage = requests.get(url=url)
             sp = BeautifulSoup(webpage.content, "lxml")
+            return sp
 
+        except Exception:
+            print("Error occured during GET request.")
+            return None
+
+    def scrape_product(self, url, is_combo):
+        """In this we scrape each individual product on the page"""
+
+        if sp := self.cook_soup(url):  # walrus operator op in the chat
             for product in sp.find_all("div", class_="desc product-desc"):
                 # Extract scientific name and combo names
                 cleaned_scientific_name, list_of_names = self.extract_product_name(
@@ -72,8 +80,7 @@ class Scraper:
                     "all_names": list_of_names,
                     "total_units": unit,
                 }
-        except requests.HTTPError:
-            print("Connection Error: ", requests.HTTPError)
+        return {}
 
     def scrape_page(self, page_number):
         """This function creates the main list of dictionaries
@@ -81,45 +88,44 @@ class Scraper:
 
         url = f"{self.base_url}?page={page_number}"
 
-        webpage = requests.get(url=url)
-        sp = BeautifulSoup(webpage.content, "lxml")
+        if sp := self.cook_soup(url):
 
-        list_final = []
-        ctr = 1
+            list_final = []
+            ctr = 1
 
-        for product in sp.find_all("div", class_="product-item-v5"):
-            # Get the URL of the product
-            urls = product.find("a")["href"]
-            is_combo = False
-            # Get the product name
-            names = product.find("h4", class_="title-product")
+            for product in sp.find_all("div", class_="product-item-v5"):
+                # Get the URL of the product
+                urls = product.find("a")["href"]
+                is_combo = False
+                # Get the product name
+                names = product.find("h4", class_="title-product")
 
-            if "combo" in names.text.lower():
-                is_combo = True
+                if "combo" in names.text.lower():
+                    is_combo = True
 
-            names_dict = self.scrape_product(urljoin(url, urls), is_combo)
+                names_dict = self.scrape_product(urljoin(url, urls), is_combo)
 
-            # list_of_names = names.text.lower().replace("(", "").replace(")", "").split()
+                # Get the type
+                types = self.extract_type(names.text)
 
-            # Get the type
-            types = self.extract_type(names.text)
+                # Get the price
+                price = self.extract_price(product)
 
-            # Get the price
-            price = self.extract_price(product)
+                list_final.append(
+                    {
+                        "Product Title": names.text.strip(),
+                        "Scientific name": names_dict["scientific_name"],
+                        "Type": types,
+                        "All_Names": names_dict["all_names"],
+                        "Total Units": names_dict["total_units"],
+                        "Price": price,
+                        "URL": urljoin(url, urls),
+                    }
+                )
 
-            list_final.append(
-                {
-                    "Product Title": names.text.strip(),
-                    "Scientific name": names_dict["scientific_name"],
-                    "Type": types.title(),
-                    "All_Names": names_dict["all_names"],
-                    "Total Units": names_dict["total_units"],
-                    "Price": price,
-                    "URL": urljoin(url, urls),
-                }
-            )
+            return list_final
 
-        return list_final
+        return
 
     def dump_to_excel(self, final_list, page_number, writer):
         """Dumping the dictionary into excel"""
@@ -150,6 +156,7 @@ if __name__ == "__main__":
 
     scraper = Scraper(base_url="https://fermosaplants.com/collections/sansevieria")
     total_pages = 7  # Scrape all 7 pages
+
     with pd.ExcelWriter("fermosa_data.xlsx") as writer:
         for i in range(1, total_pages + 1):
             print(f"Scraping Page {i}...")
