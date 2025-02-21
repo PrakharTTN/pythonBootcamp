@@ -1,0 +1,261 @@
+[('Mini Boncel', ''), ('Francisii', ''), ('Silver steel', ''), ('Kirkii silver blue', ''), ('Subspicata', ''), ('Boncel Small Size', '')]
+Combo No. 1
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Mini Boncel', ''), ('Francisii', ''), ('Silver steel', ''), ('Kirkii silver blue', ''), ('Subspicata', ''), ('Boncel Small Size', '')], 'total_units': 6} 
+
+
+Sansevieria Combo Offer Of 6 (L)
+ 
+
+
+[('Coppertone', ''), ('Silver Siam', ''), ('Silver Princess', ''), ('Fernwood', ''), ('Gracilis Large', '')]
+Combo No. 2
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Coppertone', ''), ('Silver Siam', ''), ('Silver Princess', ''), ('Fernwood', ''), ('Gracilis Large', '')], 'total_units': 5} 
+
+
+Sansevieria Combo Offer Of 6 (B)
+ 
+
+
+[('Cylindrica', ''), ('Hybrid Delhi', ''), ('Motomo', ''), ('Silver Nymph', ''), ('Gracilis', ''), ('Tiger', '')]
+Combo No. 3
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Cylindrica', ''), ('Hybrid Delhi', ''), ('Motomo', ''), ('Silver Nymph', ''), ('Gracilis', ''), ('Tiger', '')], 'total_units': 6} 
+
+
+Sansevieria Combo Offer Of 6 (H)
+ 
+
+
+[('Coppertone', ''), ('Fischeri singularis', ''), ('Kirkii Silver Blue', ''), ('Midnight Fountain', ''), ('Hybrid Delhi Large', ''), ('Francisii', '')]
+Combo No. 4
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Coppertone', ''), ('Fischeri singularis', ''), ('Kirkii Silver Blue', ''), ('Midnight Fountain', ''), ('Hybrid Delhi Large', ''), ('Francisii', '')], 'total_units': 6} 
+
+
+Sansevieria Combo Offer Of 5 (D)
+ 
+
+
+[('Kirkii Silver Blue', ''), ('Patens', '')]
+Combo No. 5
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Kirkii Silver Blue', ''), ('Patens', '')], 'total_units': 2} 
+
+
+Sansevieria Combo Offer Of 6 (K)
+ 
+
+
+[('Parva', ''), ('Lady Charm pup', ''), ('Cylindrica', ''), ('Mini Boncel', ''), ('Francisii', ''), ('Subspicata', '')]
+Combo No. 6
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Parva', ''), ('Lady Charm pup', ''), ('Cylindrica', ''), ('Mini Boncel', ''), ('Francisii', ''), ('Subspicata', '')], 'total_units': 6} 
+
+
+Sansevieria Combo Offer Of 6 (F)
+ 
+
+
+[('Silver Nymph', ''), ('Gracilis', ''), ('Silver steel', ''), ('Parva', ''), ('Subspicata', ''), ('Crocodile rock', '')]
+Combo No. 7
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Silver Nymph', ''), ('Gracilis', ''), ('Silver steel', ''), ('Parva', ''), ('Subspicata', ''), ('Crocodile rock', '')], 'total_units': 6} 
+
+
+Sansevieria Combo Offer Of 6 (G)
+ 
+
+
+[('Cylindrica', ''), ('Gracilis', ''), ('Kirkii Silver Blue', ''), ('Parva', ''), ('Subspicata', ''), ('Mini Boncel', '')]
+Combo No. 8
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Cylindrica', ''), ('Gracilis', ''), ('Kirkii Silver Blue', ''), ('Parva', ''), ('Subspicata', ''), ('Mini Boncel', '')], 'total_units': 6} 
+
+
+Sansevieria Silver Princess Clump
+ 
+
+
+Combo No. 9
+
+
+{'scientific_name': 'Sansevieria Princess Siam', 'all_names': [], 'total_units': 1} 
+
+
+Sansevieria Combo Offer Of 6 (C)
+ 
+
+
+[('Silver Nymph', ''), ('Tiger', ''), ('Moto', ''), ('Silver Steel', ''), ('Motomo', ''), ('Hybrid Delhi', '')]
+Combo No. 10
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Silver Nymph', ''), ('Tiger', ''), ('Moto', ''), ('Silver Steel', ''), ('Motomo', ''), ('Hybrid Delhi', '')], 'total_units': 6} 
+
+
+Sansevieria Combo Offer Of 3 (N)
+ 
+
+
+[('Dancing Lady', ''), ('Aff Marsha', ''), ('Hahnii Gaster', '')]
+Combo No. 11
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Dancing Lady', ''), ('Aff Marsha', ''), ('Hahnii Gaster', '')], 'total_units': 3} 
+
+
+Sansevieria Hybrid 'Tower'
+ 
+
+
+Combo No. 12
+
+
+{'scientific_name': "Sansevieria Hybrid 'Tower'", 'all_names': [], 'total_units': 1} 
+
+
+Sansevieria Combo Offer Of 4 (M)
+ 
+
+
+[('Masoniana Yellow Variegated', ''), ('Francisii White variegated', ''), ('Sulcata Yellow Variegated', ''), ('Boncel Yellow Variegated', '')]
+Combo No. 13
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Masoniana Yellow Variegated', ''), ('Francisii White variegated', ''), ('Sulcata Yellow Variegated', ''), ('Boncel Yellow Variegated', '')], 'total_units': 4} 
+
+
+COMBO #103 (10 sansevieria)
+ 
+
+
+[('Cleopatra', ''), ('Sindoro', ''), ('Pagoda', ''), ('Silver crown5', ''), ('Tower', ''), ('Midnight fountain', ''), ('Nalika', ''), ('Lobel Kenya', ''), ('Andaman', ''), ('Spoon leaf\xa0', '')]
+Combo No. 14
+
+
+{'scientific_name': 'Sanseveria', 'all_names': [('Cleopatra', ''), ('Sindoro', ''), ('Pagoda', ''), ('Silver crown5', ''), ('Tower', ''), ('Midnight fountain', ''), ('Nalika', ''), ('Lobel Kenya', ''), ('Andaman', ''), ('Spoon leaf\xa0', '')], 'total_units': 10} 
+
+
+Sansevieria Masoniana Yellow Variegated (Single Leaf)
+ 
+
+
+Combo No. 15
+
+
+{'scientific_name': 'Sansevieria Masoniana variegated', 'all_names': [], 'total_units': 1} 
+
+
+Sansevieria Gracilis Clump
+ 
+
+
+Combo No. 16
+
+
+{'scientific_name': 'Sansevieria Gracilis', 'all_names': [], 'total_units': 1} 
+
+
+Sansevieria Combo Offer Of 4 (P)
+ 
+
+
+[('Sansevieria Pagoda pup', ''), ('Silver Boncel', ''), ('Francisii White Variegated', '')]
+Combo No. 17
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Sansevieria Pagoda pup', ''), ('Silver Boncel', ''), ('Francisii White Variegated', '')], 'total_units': 3} 
+
+
+Sansevieria Hybrid Delhi
+ 
+
+
+Combo No. 18
+
+
+{'scientific_name': 'Sansevieria Hybrid Delhi', 'all_names': [], 'total_units': 1} 
+
+
+Sansevieria Combo Offer Of 2 (Q)
+ 
+
+
+[('Whitney', ''), ('Silver Siam', '')]
+Combo No. 19
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Whitney', ''), ('Silver Siam', '')], 'total_units': 2} 
+
+
+Sansevieria Combo Offer Of 6 (J)
+ 
+
+
+[('Moto', ''), ('Lady Charm', ''), ('Gracilis', ''), ('Crocodile rock', ''), ('Silver Nymph', ''), ('Silver Steel', '')]
+Combo No. 20
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Moto', ''), ('Lady Charm', ''), ('Gracilis', ''), ('Crocodile rock', ''), ('Silver Nymph', ''), ('Silver Steel', '')], 'total_units': 6} 
+
+
+Sansevieria Whale fin Green (Single Leaf)
+ 
+
+
+Combo No. 21
+
+
+{'scientific_name': 'Sansevieria Masoniana', 'all_names': [], 'total_units': 1} 
+
+
+Sansevieria Trifaciata 'Futura Gold'
+ 
+
+
+Combo No. 22
+
+
+{'scientific_name': "Sansevieria Trifaciata 'Futura Gold'", 'all_names': [], 'total_units': 1} 
+
+
+Sansevieria Combo Offer Of 4 (I)
+ 
+
+
+[('Arborescens', ''), ('Bagamoyensis', ''), ('Hybrid Delhi', ''), ('Francisii', '')]
+Combo No. 23
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Arborescens', ''), ('Bagamoyensis', ''), ('Hybrid Delhi', ''), ('Francisii', '')], 'total_units': 4} 
+
+
+Sansevieria Combo Offer Of 6 (E)
+ 
+
+
+[('Moto', ''), ('Mini Boncel', ''), ('Ballyi', ''), ('Cylindrica', ''), ('Hybrid Delhi', ''), ('Francisii', '')]
+Combo No. 24
+
+
+{'scientific_name': 'Sansevieria', 'all_names': [('Moto', ''), ('Mini Boncel', ''), ('Ballyi', ''), ('Cylindrica', ''), ('Hybrid Delhi', ''), ('Francisii', '')], 'total_units': 6} 
+
+
+Sansevieria Silver Siam Clump
+ 
+
+
+Combo No. 25
+
+
+{'scientific_name': 'Sansevieria Silver Siam', 'all_names': [], 'total_units': 1} 
