@@ -21,7 +21,7 @@ import pickle
 import json
 from email.header import decode_header
 
-class emailEnvironment:
+class EmailEnvironment:
 
     def __init__(self):
         self.user=""
@@ -44,7 +44,7 @@ class emailEnvironment:
                 self.passw=credentials['password']
                 print("Successfully read the config file with credentials.")
                 self.connection()
-            print("Failed to load credentials.")
+            # print("Failed to load credentials.")
     
     #This function creates a session with my gmail account
     def connection(self):
@@ -53,6 +53,8 @@ class emailEnvironment:
             self.session.login(self.user,self.passw)
             print("Access has been granted. Fetching mail details.")
             self.fetch_emails()
+            self.session.logout()
+
 
 
     #This function checks for attachments in the mail and 
@@ -82,10 +84,10 @@ class emailEnvironment:
 
     # Fetch all emails from inbox
     def fetch_emails(self):
-        maxemails=5 #Specified total emails I want to download
+        max_emails=5 #Specified total emails I want to download
         self.session.select("inbox")
         status, messages = self.session.search(None, "ALL") 
-        email_ids = messages[0].split()[-maxemails:]
+        email_ids = messages[0].split()[-max_emails:]
 
         for email_id in email_ids:
             # Fetch each email
@@ -114,6 +116,7 @@ class emailEnvironment:
                     #Call the dump function to dump
         self.dump()
         print("Dumped the data in JSON files. Check directory.")
+
 
 #Specified path of my config
 path="/home/prakhar/Desktop/config.yaml"
