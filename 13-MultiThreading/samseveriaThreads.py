@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import pandas as pd
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor
 
 # Regular expressions for extracting information
@@ -148,9 +149,11 @@ if __name__ == "__main__":
 
     # Store results in a dictionary for each page
     all_scraped_data = {}
+    start = time.time()
 
     with ThreadPoolExecutor(max_workers=7) as executor:
         results = executor.map(scraper.scrape_page, range(1, total_pages + 1))
+    end = time.time()
 
     # Store the data with respective page numbers
     for page_number, page_data in enumerate(results, start=1):
@@ -162,3 +165,4 @@ if __name__ == "__main__":
         print("Scraping complete. Data saved.")
     else:
         print("Problem in scraping.")
+    print(end - start, " seconds taken.")
