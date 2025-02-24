@@ -54,8 +54,8 @@ class Scraper:
             return None
 
     def scrape_product(self, url, is_combo):
-        sp = self.cook_soup(url)
-        if sp:
+
+        if sp := self.cook_soup(url):
             for product in sp.find_all("div", class_="desc product-desc"):
                 cleaned_scientific_name, list_of_names = self.extract_product_name(
                     product.text, is_combo
@@ -66,7 +66,7 @@ class Scraper:
                     "all_names": list_of_names,
                     "total_units": unit,
                 }
-        return {}
+        return {"Product": "Empty"}
 
     def scrape_page(self, page_number):
         url = f"{self.base_url}?page={page_number}"
@@ -98,7 +98,7 @@ class Scraper:
                     }
                 )
             return list_final
-        return []
+        return [{f"Page{page_number}": "Empty"}]
 
     def dump_to_excel(self, final_list, page_number, writer):
         max_names = max((len(item["All_Names"]) for item in final_list), default=0)
