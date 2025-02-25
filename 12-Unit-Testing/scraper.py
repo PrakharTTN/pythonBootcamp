@@ -119,6 +119,7 @@ class Scraper:
 
 
 if __name__ == "__main__":
+
     scraper = Scraper(base_url="https://fermosaplants.com/collections/sansevieria")
     total_pages = 7
 
