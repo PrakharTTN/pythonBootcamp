@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Update Menu Item</title>
+</head>
+<body>
+    <h1>Add/Update Menu Item</h1>
+    
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        {% if form.errors %}
+            {% for error in form.errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+        <button type="submit">Add Item</button>
+    </form>
+    
+    <br>
+    <a href="{% url 'management:view_menu' %}">Back to Menu</a>
+</body>
+</html>

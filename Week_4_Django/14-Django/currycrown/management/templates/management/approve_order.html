@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approve Order</title>
+</head>
+<body>
+    <h1>Approve Order</h1>
+    
+    <h2>Order Details</h2>
+    <table>
+        <tr>
+            <th>Order ID</th>
+            <td>{{ order.order_id }}</td>
+        </tr>
+        <tr>
+            <th>Customer Name</th>
+            <td>{{ order.user.username }}</td>
+        </tr>
+        <tr>
+            <th>Order Total</th>
+            <td> Rs. {{ order.total_price }}</td>
+        </tr>
+        <tr>
+            <th>Order Time</th>
+            <td>{{ order.order_time }}</td>
+        </tr>
+        <tr>
+            <th>Order Status</th>
+            <td>{{ order.order_status }}</td>
+        </tr>
+    </table>
+
+    <h2>Update Order Status</h2>
+    <form method="POST">
+        {% csrf_token %}
+        
+        <label for="Updated status">Select New Status:</label>
+        <select name="Updated status" id="Updated status" type="Updated status">
+            <option value="pending" {% if order.order_status == "pending" %}selected{% endif %}>Pending</option>
+            <option value="completed" {% if order.order_status == "completed" %}selected{% endif %}>Completed</option>
+            <option value="cancelled" {% if order.order_status == "Cancelled" %}selected{% endif %}>Cancelled</option>
+            
+        </select>
+        
+        <br><br>
+        <button type="submit">Update Status</button>
+        <br><br>
+        <a href="{% url 'management:show_orders' %}">Go back to orders</a>
+    </form>
+
+    <br>
+
+</body>
+</html>

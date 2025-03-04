@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Deletion</title>
+</head>
+<body>
+    <h1>Are you sure you want to delete this item?</h1>
+    
+    <p><strong>{{ item.item_name }}</strong></p>
+    <img src="{{ item.item_image.url }}" alt="{{ item.item_name }}" style="width: 100px;"><br>
+    <p>Price: Rs. {{ item.item_price }}</p>
+    <p>Description: {{ item.item_desc }}</p>
+    <p>Rating: {{ item.item_rating }}</p>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Yes, Delete</button>
+    </form>
+    <a href="{% url 'management:view_menu' %}">Cancel</a>
+</body>
+</html>
+

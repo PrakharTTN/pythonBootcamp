@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <h1>Order Confirmation</h1>
+    
+    <p>Thank you for your order, {{ order.user.username }}!</p>
+    
+    <h3>Order Details:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Item name</th>
+                <th></th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in order.order_details %}
+            <tr>
+                <td>{{ item.item_name }}</td>
+                <td></td>
+                <td>{{ item.quantity }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p><strong>Status:</strong> {{ order.order_status }}</p>
+    <p><strong>Order Time:</strong> {{ order.order_time }}</p>
+    <p><strong>Order Total:</strong> Rs. {{ order.total_price }}</p>
+
+
+    <br>
+    <a href="{% url 'customer:view_menu' %}">Go to Menu Page</a>
+</body>
+</html>
+
