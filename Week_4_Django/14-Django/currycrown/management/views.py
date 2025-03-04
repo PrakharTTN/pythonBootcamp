@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Menu
-from .forms import MenuForm
+from .forms import MenuForm, UpdateMenuForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.admin.views.decorators import staff_member_required
 
@@ -54,9 +54,9 @@ def update_menu(request, item_id):
     """This is to update the menu item"""
 
     menu_item = get_object_or_404(Menu, item_id=item_id)
-    form = MenuForm(instance=menu_item)
+    form = UpdateMenuForm(instance=menu_item)
     if request.method == "POST":
-        form = MenuForm(request.POST, request.FILES, instance=menu_item)
+        form = UpdateMenuForm(request.POST, request.FILES, instance=menu_item)
         if form.is_valid():
             form.save()
             return redirect("management:view_menu")
