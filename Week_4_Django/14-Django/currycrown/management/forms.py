@@ -35,3 +35,10 @@ class MenuForm(forms.ModelForm):
         if Menu.objects.filter(item_name=item_name).exists():
             raise ValidationError("Menu Item Exists")
         return item_name
+
+
+class UpdateMenuForm(MenuForm):
+
+    def clean_item_name(self):
+        item_name = self.cleaned_data.get("item_name")
+        return item_name
