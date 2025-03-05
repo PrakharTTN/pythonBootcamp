@@ -3,7 +3,6 @@ from customer.models import Orders
 from .models import Menu
 import csv
 from django.http import HttpResponse
-from django.contrib.auth.models import User
 
 
 admin.site.site_header = "CurryCrown Admin Dashboard"
