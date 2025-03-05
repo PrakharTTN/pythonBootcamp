@@ -11,4 +11,5 @@ urlpatterns = [
         views.order_confirmation,
         name="order_confirmation",
     ),
+    path("show_order/<int:user_id>/", views.view_orders, name="show_orders"),
 ]
