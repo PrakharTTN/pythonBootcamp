@@ -10,16 +10,24 @@ class CustomUserCreationForm(UserCreationForm):
         fields = ("first_name", "last_name", "email", "username")
         widgets = {
             "first_name": forms.TextInput(
-                attrs={"placeholder": "First Name", "class": "form-control"}
+                attrs={
+                    "placeholder": "First Name",
+                }
             ),
             "last_name": forms.TextInput(
-                attrs={"placeholder": "Last Name", "class": "form-control"}
+                attrs={
+                    "placeholder": "Last Name",
+                }
             ),
             "email": forms.EmailInput(
-                attrs={"placeholder": "Email Address", "class": "form-control"}
+                attrs={
+                    "placeholder": "Email Address",
+                }
             ),
             "username": forms.TextInput(
-                attrs={"placeholder": "Username", "class": "form-control"}
+                attrs={
+                    "placeholder": "Username",
+                }
             ),
         }
 
@@ -34,8 +42,12 @@ class CustomUserCreationForm(UserCreationForm):
 
         # Setting placeholder for password1 and password2 explicitly
         self.fields["password1"].widget.attrs.update(
-            {"placeholder": "Enter Password", "class": "form-control"}
+            {
+                "placeholder": "Enter Password",
+            }
         )
         self.fields["password2"].widget.attrs.update(
-            {"placeholder": "Confirm Password", "class": "form-control"}
+            {
+                "placeholder": "Confirm Password",
+            }
         )
