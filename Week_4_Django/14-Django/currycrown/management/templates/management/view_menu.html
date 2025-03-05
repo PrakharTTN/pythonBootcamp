@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Menu</title>
@@ -15,9 +16,9 @@
     <a href="{% url 'management:specific_view_menu' %}">view specific</a>
     <br>
 
-    <table>
+    <table border="1">
         <thead>
-            <tr>
+            <tr style="text-align:center;">
                 <th>Item Name</th>
                 <th>Price</th>
                 <th>Description</th>
@@ -26,7 +27,7 @@
                 <th>Actions</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody style="text-align:center;">
             {% for item in menu_items %}
                 <tr>
                     <td>{{ item.item_name }}</td>
@@ -37,9 +38,10 @@
                         <img src="{{ item.item_image.url }}" alt="{{ item.item_name }}" width="250" height="200">
                     </td>
                     <td>
-                        <a href="{% url 'management:remove_menu_item' item.item_id %}">Remove</a>
-                        <br>
                         <a href="{% url 'management:update_menu' item.item_id %}">Update</a>
+                        <br>
+                        <br>
+                        <a href="{% url 'management:remove_menu_item' item.item_id %}">Remove</a>
                     </td>
                 </tr>
             {% empty %}
