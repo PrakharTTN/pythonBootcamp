@@ -8,10 +8,12 @@
 <body>
     <h1>Menu</h1>
     <a href="{% url 'customer:place_order' %}">Place an Order!</a>
+    <a href="{% url 'customer:show_orders' user.id%}">Show Orders</a>
+    <a href="{% url 'landing_page'%}">logout</a>
     <br>
     <br>
 
-    <table>
+    <table border="1" style="text-align:center;">
         <thead>
             <tr>
                 <th>Item Name</th>
