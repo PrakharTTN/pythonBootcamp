@@ -3,10 +3,11 @@ from customer.models import Orders
 from .models import Menu
 import csv
 from django.http import HttpResponse
-from django.contrib.auth import get_user
+from django.contrib.auth.models import User
+
 
 admin.site.site_header = "CurryCrown Admin Dashboard"
-admin.site.index_title = f"Welcome to CurryCrown Admin"
+admin.site.index_title = "Welcome to CurryCrown Admin"
 
 
 @admin.action(description="Mark Completed")
