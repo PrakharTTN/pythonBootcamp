@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from .models import Orders
 from management.models import Menu
-from django.contrib.auth import get_user
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 
 
@@ -44,11 +44,18 @@ def place_order(request):
             return redirect("customer:order_confirmation", order_id=order.order_id)
         return redirect("customer:place_order")
 
-    # Display available menu items
     menu_items = Menu.objects.all()
     return render(request, "customer/place_order.html", {"menu_items": menu_items})
 
 
+@login_required(login_url="/login")
 def order_confirmation(request, order_id):
     order = Orders.objects.get(order_id=order_id)
     return render(request, "customer/order_confirmation.html", {"order": order})
+
+
+def view_orders(request, user_id):
+    user = User.objects.get(id=user_id)
+    orders = Orders.objects.filter(user=user)
+
+    return render(request, "customer/show_orders.html", {"orders": orders})
