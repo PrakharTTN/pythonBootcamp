@@ -34,7 +34,7 @@ class VoteFormView(FormView):
         poll = form.cleaned_data["poll"]
         username = form.cleaned_data["user"]
         if Vote.objects.filter(poll=poll, user=username).exists():
-            return HttpResponseForbidden("You have already voted for this poll.")
+            return HttpResponseForbidden("You have already voted for poll.")
 
         # Save the vote
         Vote.objects.create(poll=poll, user=username)
