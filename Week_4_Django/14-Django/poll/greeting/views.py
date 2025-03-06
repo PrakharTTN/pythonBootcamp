@@ -1,19 +1,41 @@
-from django.views.generic import ListView
-from .models import Question
-from .forms import QuestionForm
+# polls/views.py
+from django.views.generic import ListView, DetailView
+from django.views.generic.edit import FormView
+from django.urls import reverse_lazy
+from django.http import HttpResponseForbidden
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.shortcuts import redirect
+from .models import Poll, Vote
+from .forms import VoteForm
 
 
-class QuestionsListView(ListView):
-    pass
+class PollListView(LoginRequiredMixin, ListView):
+    model = Poll
+    template_name = "poll_list.html"
+    context_object_name = "polls"
+    login_url = "/login"
 
 
-def add_question(request):
-    if request.method == "POST":
-        form = QuestionForm(request.POST)
-        if form.is_valid:
-            form.save()
+class PollDetailView(DetailView):
+    model = Poll
+    template_name = "poll_detail.html"
+    context_object_name = "poll"
+
+    def post(self, request):
+        return redirect("greeting:vote_from")
 
 
-def get_question(request):
-    questions = Question.objects.all()
-    return (request, {"Questions": questions})
+class VoteFormView(FormView):
+    template_name = "vote_form.html"
+    form_class = VoteForm
+    success_url = reverse_lazy("polls:poll_list")
+
+    def form_valid(self, form):
+        poll = form.cleaned_data["poll"]
+        username = form.cleaned_data["user"]
+        if Vote.objects.filter(poll=poll, user=username).exists():
+            return HttpResponseForbidden("You have already voted for this poll.")
+
+        # Save the vote
+        Vote.objects.create(poll=poll, user=username)
+        return super().form_valid(form)

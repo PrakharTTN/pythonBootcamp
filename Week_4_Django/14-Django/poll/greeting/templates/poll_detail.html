@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ poll.question_text }}</title>
+</head>
+<body>
+    <h1>{{ poll.question_text }}</h1>
+    <p>Created at: {{ poll.created_at }}</p>
+    <p>Status: {% if poll.is_active %} Active {% else %} Closed {% endif %}</p>
+
+    <h2>Submit Your Vote</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <a href="{% url 'polls:vote_form' poll.pk %}">Submit a vote</a>
+    </form>
+</body>
+</html>

@@ -1,12 +1,8 @@
 from django import forms
-from .models import Question
+from .models import Vote
 
 
-class QuestionForm(forms.ModelForm):
-    """Class to create menu form"""
-
+class VoteForm(forms.ModelForm):
     class Meta:
-        """This defines the form's layout"""
-
-        model = Question
-        fields = ["description", "answer"]
+        model = Vote
+        fields = ["poll", "user"]

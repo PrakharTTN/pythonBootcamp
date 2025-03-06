@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "pollapp",
+    "authentication",
+    "greeting",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -55,7 +56,10 @@ ROOT_URLCONF = "poll.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/templates",
+            "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/authentication/templates",
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -76,12 +80,8 @@ WSGI_APPLICATION = "poll.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "currycrown",
-        "USER": "test",
-        "PASSWORD": "secretkey",
-        "HOST": "localhost",
-        "PORT": "3306",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
@@ -126,3 +126,10 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+# settings.py
+
+# Redirect the user to the home page (or any page) after login
+LOGIN_REDIRECT_URL = "/"
+
+# Specify the login URL if the user is not authenticated
+LOGIN_URL = "/login/"

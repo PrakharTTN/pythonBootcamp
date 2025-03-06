@@ -1,10 +1,20 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-ANSWER_CHOICES = [("yes", "yes"), ("no", "no")]
+
+class Poll(models.Model):
+    question_text = models.CharField(max_length=200)
+    created_at = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.question_text
 
 
-# Create your models here.
-class Question(models.Model):
-    id = models.AutoField(primary_key=True)
-    description = models.CharField(max_length=100)
-    answer = models.CharField(choices=ANSWER_CHOICES)
+class Vote(models.Model):
+    poll = models.ForeignKey(Poll, related_name="votes", on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Vote for {self.poll.question_text} from {self.user}"
