@@ -8,6 +8,20 @@
 <body>
     <h1>Place Your Order</h1>
 
+
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <div style="color: red;">
+            {% else %}
+                <div style="color: green;">
+            {% endif %}
+            {{ message }}
+            </div>
+    
+        {% endfor %}
+    {% endif %}
+
     <form method="post">
         {% csrf_token %}
         <table border=1 style="text-align:center;">
@@ -51,4 +65,4 @@
         <button type="submit">Place Order</button>
     </form>
 </body>
-</html>           
+</html>
