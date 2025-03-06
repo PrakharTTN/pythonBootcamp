@@ -9,9 +9,7 @@ def user_login(request):
     if request.method == "POST":
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
-            username = form.cleaned_data.get("username")
-            password = form.cleaned_data.get("password")
-            user = authenticate(username=username, password=password)
+            user = form.get_user()
             login(request, user)
             if user.is_staff:
                 return redirect("management:landing_page")
