@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Orders
 from management.models import Menu
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 @login_required
@@ -11,51 +12,63 @@ def view_menu(request):
     return render(request, "customer/view_menu.html", {"menu_items": menu_items})
 
 
-@login_required(login_url="/login")
+# TODO: Handle exceptions:
+    # ValueError - When quantity is not a valid integer or is out of range not between 1 and 5.
+    # KeyError- When an invalid menu item not in the valid_menu_items is selected.
+    # Empty order- When no valid menu items are selected or quantities are provided.
+@login_required
 def place_order(request):
     if request.method == "POST":
-        order_details = []
         menu_items = request.POST.getlist("menu_items")
         quantities = request.POST.getlist("quantities")
-        quantities = [i for i in quantities if i != "0"]
-        print(menu_items)
-        print(quantities)
-        if menu_items and quantities:
-            total = 0
-            for item_name, quantity in zip(menu_items, quantities):
-                if quantity == 0:
-                    continue
-                order_details.append(
-                    {
-                        "item_name": item_name,
-                        "quantity": quantity,
-                    }
-                )
 
-                total += int(
-                    Menu.objects.values_list("item_price", flat=True).get(
-                        item_name=item_name
-                    )
-                ) * int(quantity)
+        valid_items = []
+        total = 0
 
-            order = Orders.objects.create(
-                user=request.user, order_details=order_details, total_price=total
-            )
-            return redirect("customer:order_confirmation", order_id=order.order_id)
-        return redirect("customer:place_order")
+        valid_menu_items = {item.item_name: item.item_price for item in Menu.objects.all()}
+
+        for item_name, quantity in zip(menu_items, quantities):
+            try:
+                quantity = int(quantity)  
+                if quantity < 1 or quantity > 5:
+                    raise ValueError 
+
+            except ValueError:
+                messages.error(request, f"Invalid quantity for {item_name}. Please enter a whole number between 1 and 5.")
+                return redirect("customer:place_order")
+
+            if item_name not in valid_menu_items:
+                messages.error(request, "Invalid menu item detected.")
+                return redirect("customer:place_order")
+
+            valid_items.append((item_name, quantity))
+            total += valid_menu_items[item_name] * quantity  
+
+        if not valid_items:
+            messages.error(request, "Please select at least one valid menu item with a valid quantity.")
+            return redirect("customer:place_order")
+
+        order_details = [{"item_name": item_name, "quantity": quantity} for item_name, quantity in valid_items]
+
+        order = Orders.objects.create(
+            user=request.user, order_details=order_details, total_price=total
+        )
+
+        messages.success(request, "Order placed successfully!")
+        return redirect("customer:order_confirmation", order_id=order.order_id)
 
     menu_items = Menu.objects.all()
     return render(request, "customer/place_order.html", {"menu_items": menu_items})
 
-
-@login_required(login_url="/login")
+@login_required
 def order_confirmation(request, order_id):
-    order = Orders.objects.get(order_id=order_id)
+    order = get_object_or_404(Orders, order_id=order_id)
     return render(request, "customer/order_confirmation.html", {"order": order})
 
-
+@login_required
 def view_orders(request, user_id):
-    user = User.objects.get(id=user_id)
-    orders = Orders.objects.filter(user=user)
+    if request.user.id != user_id:
+        return redirect("customer:view_menu") 
 
+    orders = Orders.objects.filter(user=request.user)
     return render(request, "customer/show_orders.html", {"orders": orders})
