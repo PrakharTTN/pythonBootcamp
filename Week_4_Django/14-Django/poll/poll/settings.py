@@ -59,6 +59,7 @@ TEMPLATES = [
         "DIRS": [
             "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/templates",
             "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/authentication/templates",
+            "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/poll/templates"
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -133,3 +134,40 @@ LOGIN_REDIRECT_URL = "/"
 
 # Specify the login URL if the user is not authenticated
 LOGIN_URL = "/login/"
+# settings.py
+import os
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'user_actions.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'user_actions': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}
