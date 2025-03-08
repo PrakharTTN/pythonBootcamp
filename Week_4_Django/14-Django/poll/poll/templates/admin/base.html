@@ -1,0 +1,9 @@
+{% extends "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/contrib/admin/templates/admin/base.html" %}
+
+{% block title %}{{ title }} | My Modified Admin{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">My Poll App Admin Interface</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
