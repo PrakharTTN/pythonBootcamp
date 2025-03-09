@@ -227,3 +227,5 @@ INFO 2025-03-09 21:59:27,467 basehttp "GET /static/admin/css/changelists.css HTT
 INFO 2025-03-09 21:59:27,484 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
 INFO 2025-03-09 21:59:27,499 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
 INFO 2025-03-09 21:59:27,512 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-03-09 22:06:15,154 autoreload D:\Work\pythonBootcamp\Week_4_Django\14-Django\poll\greeting\models.py changed, reloading.
+INFO 2025-03-09 22:06:15,700 autoreload Watching for file changes with StatReloader
