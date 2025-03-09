@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "greeting.middleware.RestrictIPMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -49,6 +50,8 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "greeting.middleware.LoggingMiddleware",
+    "greeting.middleware.CustomMiddleware",
 ]
 
 ROOT_URLCONF = "poll.urls"
@@ -59,7 +62,7 @@ TEMPLATES = [
         "DIRS": [
             "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/templates",
             "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/authentication/templates",
-            "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/poll/templates"
+            "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/poll/templates",
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -138,36 +141,36 @@ LOGIN_URL = "/login/"
 import os
 
 LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': '{levelname} {asctime} {module} {message}',
-            'style': '{',
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {message}",
+            "style": "{",
         },
-        'simple': {
-            'format': '{levelname} {message}',
-            'style': '{',
-        },
-    },
-    'handlers': {
-        'file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': os.path.join(BASE_DIR, 'user_actions.log'),
-            'formatter': 'verbose',
+        "simple": {
+            "format": "{levelname} {message}",
+            "style": "{",
         },
     },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'INFO',
-            'propagate': True,
+    "handlers": {
+        "file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": os.path.join(BASE_DIR, "user_actions.log"),
+            "formatter": "verbose",
         },
-        'user_actions': {
-            'handlers': ['file'],
-            'level': 'INFO',
-            'propagate': False,
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["file"],
+            "level": "INFO",
+            "propagate": True,
+        },
+        "user_actions": {
+            "handlers": ["file"],
+            "level": "INFO",
+            "propagate": False,
         },
     },
 }
