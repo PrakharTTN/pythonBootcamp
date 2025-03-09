@@ -1,3 +1,4 @@
 myvenv/
 __pycache__/
 djangovenv/
+user_actions.log/
