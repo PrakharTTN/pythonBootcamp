@@ -1,4 +1,3 @@
-# polls/views.py
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import FormView
 from django.urls import reverse_lazy
@@ -25,7 +24,9 @@ class PollDetailView(DetailView):
     def post(self, request):
         return redirect("greeting:vote_from")
 
-logger = logging.getLogger('user_actions')
+
+logger = logging.getLogger("user_actions")
+
 
 class VoteFormView(FormView):
     template_name = "vote_form.html"
@@ -41,7 +42,7 @@ class VoteFormView(FormView):
         # Save the vote
 
         Vote.objects.create(poll=poll, user=username)
-        logger.info(f'User  {username} voted for: {poll}')
+        logger.info(f"User  {username} voted for: {poll}")
         return super().form_valid(form)
 
 
