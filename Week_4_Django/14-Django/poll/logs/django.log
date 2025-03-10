@@ -1,0 +1,578 @@
+INFO 2025-03-10 06:37:29,767 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:37:47,674 basehttp "GET /greeting/ HTTP/1.1" 200 1396
+WARNING 2025-03-10 06:37:47,686 log Not Found: /favicon.ico
+WARNING 2025-03-10 06:37:47,687 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 06:38:08,274 basehttp "GET /admin/ HTTP/1.1" 200 8705
+INFO 2025-03-10 06:38:08,324 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+WARNING 2025-03-10 06:38:08,375 log Not Found: /favicon.ico
+WARNING 2025-03-10 06:38:08,375 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 06:38:11,424 basehttp "GET /admin/greeting/poll/add/ HTTP/1.1" 200 9539
+INFO 2025-03-10 06:38:11,444 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-10 06:38:18,746 basehttp "POST /admin/greeting/poll/add/ HTTP/1.1" 302 0
+INFO 2025-03-10 06:38:18,789 basehttp "GET /admin/greeting/poll/ HTTP/1.1" 200 15065
+INFO 2025-03-10 06:38:18,847 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-03-10 06:38:18,915 log Not Found: /favicon.ico
+WARNING 2025-03-10 06:38:18,916 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 06:38:44,459 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/signals.py changed, reloading.
+INFO 2025-03-10 06:38:44,676 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:38:49,887 basehttp "GET /admin/greeting/poll/add/ HTTP/1.1" 200 9539
+INFO 2025-03-10 06:38:49,908 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-03-10 06:38:49,973 log Not Found: /favicon.ico
+WARNING 2025-03-10 06:38:49,973 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 06:38:55,189 basehttp "POST /admin/greeting/poll/add/ HTTP/1.1" 302 0
+INFO 2025-03-10 06:38:55,228 basehttp "GET /admin/greeting/poll/ HTTP/1.1" 200 15493
+INFO 2025-03-10 06:38:55,295 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-10 06:45:49,922 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:45:50,125 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:45:51,218 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:45:51,411 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:45:53,516 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:45:53,704 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:45:57,814 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:45:58,011 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:46:02,131 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:46:02,324 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:46:04,425 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:46:04,616 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:46:06,714 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:46:06,909 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:46:08,007 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:46:08,237 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:46:12,365 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:46:12,559 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:46:13,644 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:46:13,864 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:46:18,974 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:46:19,170 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:46:21,266 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:46:21,474 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:46:28,618 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:46:28,810 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:54:53,016 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 06:54:54,062 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:55:07,215 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:55:07,412 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:55:16,534 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:55:16,736 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:55:19,817 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:55:20,018 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:55:25,128 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:55:25,319 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:55:28,409 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:55:28,624 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:55:41,769 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:55:41,999 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:55:53,120 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:55:53,344 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:55:58,440 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:55:58,632 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:56:01,714 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:56:01,908 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:56:09,017 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:56:09,241 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:56:11,311 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:56:11,514 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 06:59:27,941 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 06:59:28,173 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:14:11,214 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:17:32,691 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 07:17:32,876 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:17:35,506 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 07:17:35,750 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:17:41,967 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:17:42,192 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:17:43,399 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:17:43,598 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:17:46,772 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:17:46,994 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:06,337 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:06,595 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:08,781 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:09,027 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:14,227 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:14,452 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:15,599 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:15,799 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:20,980 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:21,188 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:26,375 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:26,574 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:30,759 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:30,961 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:33,110 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:33,319 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:34,466 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:34,676 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:39,855 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:40,104 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:42,288 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:42,506 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:45,704 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:45,929 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:46,972 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:47,196 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:51,388 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:51,594 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:52,789 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:53,007 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:18:54,185 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:18:54,399 autoreload Watching for file changes with StatReloader
+WARNING 2025-03-10 07:19:02,517 log Not Found: /greeting/poll
+WARNING 2025-03-10 07:19:02,517 basehttp "GET /greeting/poll HTTP/1.1" 404 4087
+WARNING 2025-03-10 07:19:02,538 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:19:02,539 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:19:07,550 basehttp "GET /greeting/poll/6 HTTP/1.1" 301 0
+INFO 2025-03-10 07:19:07,642 basehttp "GET /greeting/poll/6/ HTTP/1.1" 200 471
+INFO 2025-03-10 07:19:13,941 basehttp "GET /greeting/poll/upload_excel HTTP/1.1" 200 509
+WARNING 2025-03-10 07:19:13,953 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:19:13,953 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:19:21,900 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:19:22,110 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:19:25,286 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/urls.py changed, reloading.
+INFO 2025-03-10 07:19:25,533 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:19:29,220 basehttp "GET /greeting/upload_excel HTTP/1.1" 301 0
+INFO 2025-03-10 07:19:29,231 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 509
+INFO 2025-03-10 07:20:57,980 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 1299
+WARNING 2025-03-10 07:20:58,004 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:20:58,004 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:21:34,661 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 28657
+WARNING 2025-03-10 07:21:34,674 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:21:34,675 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:22:19,803 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 509
+WARNING 2025-03-10 07:22:19,826 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:22:19,826 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+ERROR 2025-03-10 07:22:24,522 log Internal Server Error: /greeting/upload_excel/
+Traceback (most recent call last):
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py", line 63, in post
+    return render(request, "display_data.html", {"data":data})
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/defaulttags.py", line 861, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 702, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 764, in args_check
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: slice requires 2 arguments, 1 provided
+ERROR 2025-03-10 07:22:24,523 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 500 187529
+ERROR 2025-03-10 07:22:51,206 log Internal Server Error: /greeting/upload_excel/
+Traceback (most recent call last):
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py", line 63, in post
+    return render(request, "display_data.html", {"data":data})
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/defaulttags.py", line 861, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 702, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/template/base.py", line 764, in args_check
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: slice requires 2 arguments, 1 provided
+ERROR 2025-03-10 07:22:51,206 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 500 187802
+WARNING 2025-03-10 07:22:51,221 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:22:51,221 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:23:09,840 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-10 07:23:10,020 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3519
+INFO 2025-03-10 07:23:10,130 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-03-10 07:23:10,131 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-03-10 07:23:10,132 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-03-10 07:23:10,132 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-03-10 07:23:10,132 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-03-10 07:23:10,133 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+WARNING 2025-03-10 07:23:10,175 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:23:10,175 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:23:13,342 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 28096
+WARNING 2025-03-10 07:23:13,359 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:23:13,360 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:23:25,903 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 28096
+WARNING 2025-03-10 07:23:25,917 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:23:25,917 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:24:03,892 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 509
+WARNING 2025-03-10 07:24:03,917 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:24:03,917 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:24:08,516 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 28096
+INFO 2025-03-10 07:24:52,232 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 509
+INFO 2025-03-10 07:24:58,525 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 29030
+INFO 2025-03-10 07:27:35,388 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 509
+WARNING 2025-03-10 07:27:35,416 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:27:35,416 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:45:40,776 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/models.py changed, reloading.
+INFO 2025-03-10 07:45:41,120 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:48:58,800 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-10 07:48:58,814 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3519
+INFO 2025-03-10 07:48:58,885 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-03-10 07:48:58,887 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-03-10 07:48:58,887 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-03-10 07:48:58,887 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-03-10 07:48:58,888 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-03-10 07:48:58,888 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-03-10 07:48:58,899 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+WARNING 2025-03-10 07:48:58,965 log Not Found: /favicon.ico
+WARNING 2025-03-10 07:48:58,965 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 07:49:03,498 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-03-10 07:49:03,554 basehttp "GET /admin/ HTTP/1.1" 200 9412
+INFO 2025-03-10 07:49:03,619 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-03-10 07:49:03,626 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-03-10 07:49:03,626 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-03-10 07:49:03,636 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-03-10 07:49:06,143 basehttp "GET /admin/greeting/poll/ HTTP/1.1" 200 15289
+INFO 2025-03-10 07:49:06,156 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-03-10 07:49:06,159 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-03-10 07:49:06,160 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-03-10 07:49:06,160 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-03-10 07:49:06,160 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-03-10 07:49:06,161 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-03-10 07:49:06,162 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-03-10 07:49:06,163 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-03-10 07:49:06,167 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-03-10 07:49:06,197 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-10 07:49:06,199 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-03-10 07:49:06,208 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-03-10 07:49:06,223 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-03-10 07:52:40,940 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:52:41,197 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:52:42,365 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:52:42,591 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:52:44,779 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:52:44,981 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:52:52,187 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:52:52,391 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:52:55,447 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:52:55,639 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:52:58,732 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:52:58,929 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:13,205 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:13,409 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:16,463 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:16,691 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:22,916 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:23,123 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:27,299 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:27,510 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:30,704 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:30,965 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:33,141 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:33,396 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:37,624 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:37,851 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:40,045 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:40,311 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:47,571 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:47,778 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:52,013 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:52,243 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:53:56,307 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:53:56,534 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:54:02,763 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/models.py changed, reloading.
+INFO 2025-03-10 07:54:03,000 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:54:04,230 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/models.py changed, reloading.
+INFO 2025-03-10 07:54:04,454 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:54:09,664 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:54:09,891 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:56:04,093 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:56:04,308 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:56:10,742 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-10 07:56:10,760 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3519
+INFO 2025-03-10 07:56:21,468 basehttp "GET /greeting/upload_excel HTTP/1.1" 301 0
+INFO 2025-03-10 07:56:21,478 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 509
+ERROR 2025-03-10 07:56:28,053 log Internal Server Error: /greeting/upload_excel/
+Traceback (most recent call last):
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py", line 58, in post
+    workbook = openpyxl.load_workbook(
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/openpyxl/reader/excel.py", line 348, in load_workbook
+    reader.read()
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/openpyxl/reader/excel.py", line 289, in read
+    self.read_manifest()
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/openpyxl/reader/excel.py", line 134, in read_manifest
+    src = self.archive.read(ARC_CONTENT_TYPES)
+  File "/usr/lib/python3.10/zipfile.py", line 1486, in read
+    with self.open(name, "r", pwd) as fp:
+  File "/usr/lib/python3.10/zipfile.py", line 1525, in open
+    zinfo = self.getinfo(name)
+  File "/usr/lib/python3.10/zipfile.py", line 1452, in getinfo
+    raise KeyError(
+KeyError: "There is no item named '[Content_Types].xml' in the archive"
+ERROR 2025-03-10 07:56:28,054 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 500 105178
+INFO 2025-03-10 07:56:57,438 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 509
+ERROR 2025-03-10 07:57:03,459 log Internal Server Error: /greeting/upload_excel/
+Traceback (most recent call last):
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: greeting_poll.is_active
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py", line 65, in post
+    Poll.objects.create(question_text=question, is_active=is_active)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save
+    self.save_base(
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/models/base.py", line 998, in save_base
+    updated = self._save_table(
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/models/base.py", line 1161, in _save_table
+    results = self._do_insert(
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/models/base.py", line 1202, in _do_insert
+    return manager._insert(
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/djangovenv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: greeting_poll.is_active
+ERROR 2025-03-10 07:57:03,461 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 500 173632
+INFO 2025-03-10 07:57:18,210 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:57:18,477 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:57:21,532 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:57:21,739 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:57:23,810 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:57:23,994 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:57:27,170 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:57:27,381 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:57:31,441 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:57:31,630 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:57:33,709 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:57:33,960 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:57:35,869 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 509
+INFO 2025-03-10 07:57:38,053 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 1265
+WARNING 2025-03-10 07:57:44,945 log Not Found: /
+WARNING 2025-03-10 07:57:44,945 basehttp "GET / HTTP/1.1" 404 3070
+INFO 2025-03-10 07:57:48,125 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-10 07:57:48,139 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3519
+INFO 2025-03-10 07:57:50,611 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3679
+INFO 2025-03-10 07:58:01,190 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-03-10 07:58:01,223 basehttp "GET /admin/ HTTP/1.1" 200 9412
+INFO 2025-03-10 07:58:01,301 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-03-10 07:58:01,317 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-03-10 07:58:01,317 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-03-10 07:58:01,317 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+WARNING 2025-03-10 07:58:01,324 log Not Found: /favicon.ico
+INFO 2025-03-10 07:58:04,100 basehttp "GET /admin/greeting/poll/ HTTP/1.1" 200 17684
+INFO 2025-03-10 07:58:04,122 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-03-10 07:58:04,124 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-03-10 07:58:04,125 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-03-10 07:58:04,126 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-03-10 07:58:04,126 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-03-10 07:58:04,126 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-03-10 07:58:04,128 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-03-10 07:58:04,128 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-10 07:58:04,130 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-03-10 07:58:04,132 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-03-10 07:58:04,133 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-03-10 07:58:04,174 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-03-10 07:58:04,200 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-03-10 07:58:09,087 basehttp "GET /admin/greeting/poll/20/change/ HTTP/1.1" 200 9840
+INFO 2025-03-10 07:58:09,121 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-10 07:58:09,134 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2025-03-10 07:58:09,135 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-03-10 07:58:09,136 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-03-10 07:58:09,202 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2025-03-10 07:58:24,686 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 07:58:24,941 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 07:58:30,034 basehttp "GET /admin/greeting/poll/ HTTP/1.1" 200 17684
+INFO 2025-03-10 07:58:30,058 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-03-10 07:58:30,122 log Not Found: /favicon.ico
+INFO 2025-03-10 07:58:39,622 basehttp "POST /admin/greeting/poll/ HTTP/1.1" 200 8945
+INFO 2025-03-10 07:58:39,642 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-03-10 07:58:41,367 basehttp "POST /admin/greeting/poll/ HTTP/1.1" 302 0
+INFO 2025-03-10 07:58:41,401 basehttp "GET /admin/greeting/poll/ HTTP/1.1" 200 15424
+INFO 2025-03-10 07:58:41,466 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-10 07:59:31,827 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 509
+INFO 2025-03-10 07:59:39,095 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 674
+INFO 2025-03-10 08:01:05,523 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 08:01:05,791 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:01:29,159 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/views.py changed, reloading.
+INFO 2025-03-10 08:01:29,412 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:03:36,884 basehttp "GET /admin/greeting/poll/ HTTP/1.1" 200 16594
+INFO 2025-03-10 08:03:36,901 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-10 08:17:02,611 basehttp "GET /greeting/ HTTP/1.1" 200 1938
+WARNING 2025-03-10 08:17:02,640 log Not Found: /favicon.ico
+INFO 2025-03-10 08:17:04,126 basehttp "GET /greeting/poll/2/ HTTP/1.1" 200 479
+INFO 2025-03-10 08:17:05,363 basehttp "GET /greeting/poll/2/vote/ HTTP/1.1" 200 1556
+INFO 2025-03-10 08:17:11,129 basehttp "POST /greeting/poll/2/vote/ HTTP/1.1" 302 0
+INFO 2025-03-10 08:17:11,151 basehttp "GET /greeting/ HTTP/1.1" 200 1938
+WARNING 2025-03-10 08:17:11,209 log Not Found: /favicon.ico
+INFO 2025-03-10 08:17:12,414 basehttp "GET /greeting/poll/3/ HTTP/1.1" 200 471
+INFO 2025-03-10 08:17:13,681 basehttp "GET /greeting/poll/3/vote/ HTTP/1.1" 200 1556
+INFO 2025-03-10 08:17:21,453 basehttp "POST /greeting/poll/3/vote/ HTTP/1.1" 302 0
+INFO 2025-03-10 08:17:21,474 basehttp "GET /greeting/ HTTP/1.1" 200 1938
+INFO 2025-03-10 08:25:52,945 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:25:53,204 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:25:55,395 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:25:55,617 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:00,824 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:01,038 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:03,224 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:03,451 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:05,628 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:05,843 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:13,068 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:13,278 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:25,544 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:25,763 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:30,859 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:31,067 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:35,159 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:35,378 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:39,462 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:39,662 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:45,881 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:46,097 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:48,277 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:48,503 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:49,672 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:49,877 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:52,051 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:52,272 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:26:57,484 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:26:57,686 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:29:01,971 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:29:02,183 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:29:17,976 basehttp "GET /greeting/upload_excel/ HTTP/1.1" 200 515
+WARNING 2025-03-10 08:29:17,997 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:29:17,997 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:29:26,803 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 820
+WARNING 2025-03-10 08:29:26,820 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:29:26,820 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:30:14,323 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 848
+WARNING 2025-03-10 08:30:14,344 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:30:14,344 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:31:35,905 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 603
+WARNING 2025-03-10 08:31:35,930 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:31:35,930 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:31:48,478 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 858
+WARNING 2025-03-10 08:31:48,493 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:31:48,493 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:32:10,125 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 851
+INFO 2025-03-10 08:32:38,547 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 863
+WARNING 2025-03-10 08:32:38,566 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:32:38,566 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:32:48,563 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 851
+WARNING 2025-03-10 08:32:48,584 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:32:48,584 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:32:54,075 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 851
+INFO 2025-03-10 08:33:41,314 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 732
+WARNING 2025-03-10 08:33:41,329 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:33:41,329 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:33:54,219 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 745
+WARNING 2025-03-10 08:33:54,243 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:33:54,243 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:34:03,609 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 758
+WARNING 2025-03-10 08:34:03,624 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:34:03,625 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
+INFO 2025-03-10 08:34:12,579 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 758
+INFO 2025-03-10 08:37:19,967 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:37:20,179 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:37:22,371 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:37:22,580 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:37:25,774 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:37:25,982 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:37:28,150 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:37:28,376 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:37:30,560 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:37:30,759 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:37:36,981 autoreload /home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/forms.py changed, reloading.
+INFO 2025-03-10 08:37:37,204 autoreload Watching for file changes with StatReloader
+INFO 2025-03-10 08:38:25,803 basehttp "POST /greeting/upload_excel/ HTTP/1.1" 200 758
+WARNING 2025-03-10 08:38:25,820 log Not Found: /favicon.ico
+WARNING 2025-03-10 08:38:25,820 basehttp "GET /favicon.ico HTTP/1.1" 404 3121
