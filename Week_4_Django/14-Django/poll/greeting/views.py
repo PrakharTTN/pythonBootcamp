@@ -1,12 +1,14 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import View, ListView, DetailView
 from django.views.generic.edit import FormView
 from django.urls import reverse_lazy
+from django.shortcuts import render
 from django.http import HttpResponseForbidden
 from django.contrib.auth.mixins import LoginRequiredMixin
-import logging
 from django.shortcuts import redirect
 from .models import Poll, Vote
-from .forms import VoteForm
+import logging
+from .forms import VoteForm, UploadExcelForm
+import openpyxl
 
 
 class PollListView(LoginRequiredMixin, ListView):
@@ -39,31 +41,48 @@ class VoteFormView(FormView):
         if Vote.objects.filter(poll=poll, user=username).exists():
             return HttpResponseForbidden("You have already voted for poll.")
 
-        # Save the vote
-
         Vote.objects.create(poll=poll, user=username)
         logger.info(f"User  {username} voted for: {poll}")
         return super().form_valid(form)
 
 
+class UploadFileView(View):
+
+    def get(self, request):
+        form = UploadExcelForm()
+        return render(request, "upload_excel.html", {"form": form})
+
+    def post(self, request):
+        form = UploadExcelForm(request.POST, request.FILES)
+        if form.is_valid():
+            workbook = openpyxl.load_workbook(
+                filename=request.FILES["file"], data_only=True
+            )
+            sheet = workbook.active
+            data = []
+            for row in sheet.iter_rows(values_only=True):
+                question = row
+                Poll.objects.create(question_text=question)
+                data.append(row)
+            return render(request, "display_data.html", {"data": data})
+
+        return render(request, "upload_excel.html", {"form": form})
+
+
 # def active_polls_view(request):
-
 #     active_polls = Poll.objects.active()  # Use the custom manager method
-
-#     return render(request, 'active_polls.html', {'polls': active_polls})
+#     return render(request, "active_polls.html", {"polls": active_polls})
 
 
 # def recent_polls_view(request):
 
-#     recent_polls = Poll.objects.created_within_last_week()  # Use the custom manager method
-
-#     return render(request, 'recent_polls.html', {'polls': recent_polls})
+#     recent_polls = (
+#         Poll.objects.created_within_last_week()
+#     )  # Use the custom manager method
+#     return render(request, "recent_polls.html", {"polls": recent_polls})
 
 
 # def votes_for_poll_view(request, poll_id):
-
 #     poll = Poll.objects.get(id=poll_id)
-
 #     votes = Vote.objects.for_poll(poll)  # Use the custom manager method
-
-#     return render(request, 'votes_for_poll.html', {'poll': poll, 'votes': votes})
+#     return render(request, "votes_for_poll.html", {"poll": poll, "votes": votes})
