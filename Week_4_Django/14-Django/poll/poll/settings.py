@@ -60,9 +60,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/greeting/templates",
-            "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/authentication/templates",
-            "/home/prakhar/Desktop/Bootcamp/Python/Week_4_Django/14-Django/poll/poll/templates",
+            BASE_DIR / "templates",
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -140,6 +138,9 @@ LOGIN_URL = "/login/"
 # settings.py
 import os
 
+import os
+
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -154,21 +155,49 @@ LOGGING = {
         },
     },
     "handlers": {
-        "file": {
+        "user_actions_file": {
             "level": "INFO",
             "class": "logging.FileHandler",
-            "filename": os.path.join(BASE_DIR, "user_actions.log"),
+            "filename": os.path.join(BASE_DIR, "logs/user_actions.log"),
+            "formatter": "verbose",
+        },
+        "poll_creation_file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/poll_creation.log"),
+            "formatter": "verbose",
+        },
+        "custom_logger_file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/custom_logger.log"),
+            "formatter": "verbose",
+        },
+        "django_file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/django.log"),
             "formatter": "verbose",
         },
     },
     "loggers": {
+        "user_actions": {
+            "handlers": ["user_actions_file"],
+            "level": "INFO",
+            "propagate": False,
+        },
+        "poll_creation": {
+            "handlers": ["poll_creation_file"],
+            "level": "INFO",
+            "propagate": False,
+        },
         "django": {
-            "handlers": ["file"],
+            "handlers": ["django_file"],  # Use the defined django_file handler
             "level": "INFO",
             "propagate": True,
         },
-        "user_actions": {
-            "handlers": ["file"],
+        "custom_logger": {
+            "handlers": ["custom_logger_file"],
             "level": "INFO",
             "propagate": False,
         },
