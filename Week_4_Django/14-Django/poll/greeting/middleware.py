@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("custom_logger")
 
 # BLOCKED_IPS = ["127.0.0.1", "192.168.1.1"]
 BLOCKED_IPS = []
