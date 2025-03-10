@@ -3,7 +3,8 @@ from django.dispatch import receiver
 from .models import Poll
 import logging
 
-logger = logging.getLogger("poll_signals")
+logger = logging.getLogger("poll_creation")
+
 
 @receiver(post_save, sender=Poll)
 def log_poll_creation(sender, instance, created, **kwargs):
