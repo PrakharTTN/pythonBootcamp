@@ -19,5 +19,7 @@ class ItemSerializer(serializers.ModelSerializer):
 
 
 class UpdateItemSerializer(ItemSerializer):
+    """This class is to override the validation of serializer when updating name"""
+
     def validate(self, data):
         return data
