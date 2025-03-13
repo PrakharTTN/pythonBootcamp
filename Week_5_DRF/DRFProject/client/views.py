@@ -1,4 +1,3 @@
-
 # Create your views here.
 from rest_framework import viewsets, status
 from rest_framework.response import Response
@@ -13,18 +12,16 @@ class UserOrderModelViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        """
-        Optionally restricts the returned orders to the current user,
-        by filtering against a `user` query parameter in the URL.
-        """
+        """Optionally restricts the returned orders to the current user,
+        by filtering against a user query parameter in the URL."""
+
         user = self.request.user
         return UserOrderModel.objects.filter(user=user)
 
     def create(self, request, *args, **kwargs):
-        """
-        Overriding the create method to handle the creation of UserOrderModel
-        and associated OrderItem model instances.
-        """
+        """Overriding the create method to handle the creation of UserOrderModel
+        and associated OrderItem model instances."""
+        
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             order = serializer.save()
@@ -34,9 +31,8 @@ class UserOrderModelViewSet(viewsets.ModelViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def update(self, request, *args, **kwargs):
-        """
-        Overriding the update method to update UserOrderModel and associated OrderItems.
-        """
+        """Overriding the update method to update UserOrderModel and associated OrderItems"""
+
         order = self.get_object()
         serializer = self.get_serializer(order, data=request.data, partial=True)
 
@@ -46,9 +42,8 @@ class UserOrderModelViewSet(viewsets.ModelViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def retrieve(self, request, *args, **kwargs):
-        """
-        Retrieve a specific order, including the associated items.
-        """
+        """Retrieve a specific order, including the associated items"""
+
         order = self.get_object()
         serializer = self.get_serializer(order)
         return Response(serializer.data)
