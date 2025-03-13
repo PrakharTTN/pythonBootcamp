@@ -6,5 +6,5 @@ router = DefaultRouter()
 router.register(r"orders", UserOrderModelViewSet)
 
 urlpatterns = [
-    path("client/", include(router.urls)),
+    path("", include(router.urls)),
 ]
