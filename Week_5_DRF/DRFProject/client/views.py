@@ -16,29 +16,20 @@ class UserOrderModelViewSet(viewsets.ModelViewSet):
         by filtering against a user query parameter in the URL."""
 
         user = self.request.user
+        print(f"Filtering orders for user: {user.username}")
         return UserOrderModel.objects.filter(user=user)
+        
 
     def create(self, request, *args, **kwargs):
         """Overriding the create method to handle the creation of UserOrderModel
         and associated OrderItem model instances."""
-        
+
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             order = serializer.save()
             return Response(
                 self.get_serializer(order).data, status=status.HTTP_201_CREATED
             )
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    def update(self, request, *args, **kwargs):
-        """Overriding the update method to update UserOrderModel and associated OrderItems"""
-
-        order = self.get_object()
-        serializer = self.get_serializer(order, data=request.data, partial=True)
-
-        if serializer.is_valid():
-            updated_order = serializer.save()
-            return Response(self.get_serializer(updated_order).data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def retrieve(self, request, *args, **kwargs):
