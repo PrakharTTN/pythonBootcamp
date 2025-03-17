@@ -14,7 +14,7 @@ class ItemSerializer(serializers.ModelSerializer):
 
 
 class OrderItemSerializer(serializers.ModelSerializer):
-    """Serializer for OrderItem model (Mid- Model for MtoM Relationship)"""
+    """Serializer for OrderItem model (Model for MtoM Relationship)"""
 
     item = serializers.PrimaryKeyRelatedField(queryset=Item.objects.all())
 
