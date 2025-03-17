@@ -12,18 +12,16 @@ class UserOrderModelViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        """Optionally restricts the returned orders to the current user,
-        by filtering against a user query parameter in the URL."""
+        """Restricts the returned orders to the current user."""
 
         user = self.request.user
         print(f"Filtering orders for user: {user.username}")
         return UserOrderModel.objects.filter(user=user)
-        
 
     def create(self, request, *args, **kwargs):
         """Overriding the create method to handle the creation of UserOrderModel
         and associated OrderItem model instances."""
-
+        request.data["user"] = self.request.user.id
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             order = serializer.save()

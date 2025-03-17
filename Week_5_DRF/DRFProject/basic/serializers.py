@@ -15,7 +15,7 @@ class ItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Item
-        fields = ["name", "description", "price", "quantity"]
+        fields = "__all__"
 
 
 class UpdateItemSerializer(ItemSerializer):

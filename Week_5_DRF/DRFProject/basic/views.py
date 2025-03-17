@@ -32,10 +32,9 @@ class StaffItemView(APIView):
     def get(self, request, *args, **kwargs):
         """This Function is to GET data in DB"""
 
-        model_data = Item.objects.all()
+        model_data = Item.objects.all().order_by("id")
         if model_data:
             mydata = ItemSerializer(model_data, many=True)
-            print(mydata.data)
             return Response(mydata.data)
         return Response(
             {"Message": "Table is empty"}, status=status.HTTP_204_NO_CONTENT
