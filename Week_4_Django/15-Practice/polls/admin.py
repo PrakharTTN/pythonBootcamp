@@ -4,7 +4,10 @@ from .models import QuestionModel, ChoiceModel
 
 # Register your models here.
 class QuestionAdmin(admin.ModelAdmin):
-    fields = ["pub_date", "question_text"]
+    fieldsets = [
+        (None, {"fields": ["question_text"]}),
+        ("Date Info", {"fields": ["pub_date"]}),
+    ]
 
 
 admin.site.register(QuestionModel, QuestionAdmin)
