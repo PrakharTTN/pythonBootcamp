@@ -1,0 +1,26 @@
+{% if question_results %}
+    <table border="1">
+        <tr>
+            <th>Question</th>
+            <th>Results</th>
+        </tr>
+        <tr>
+            <td>{{question_results.question_text}}</td>
+            <td><table border="1">
+                    <tr>
+                        <th>Choice</th>
+                        <th>Votes</th>
+                    </tr>
+                    {% for chilka in question_results.choice.all %}
+                    <tr>
+                        <td>{{chilka.choice}}</td>
+                        <td>{{chilka.votes}}</td>
+                    </tr>
+                    {% endfor %}
+                 </table>
+            </td>
+        </tr>
+    </table>
+{% else %}
+    <p>No data available</p>
+{% endif %}

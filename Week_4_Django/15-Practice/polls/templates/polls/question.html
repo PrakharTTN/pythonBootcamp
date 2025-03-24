@@ -1,0 +1,15 @@
+{% if question_details %}
+    <table border="1">
+        <tr>
+            <th>Question</th>
+            <th>Published</th>
+        </tr>
+        <tr>
+            <td>{{ question_details.question_text }}</td>
+            <td>{{ question_details.pub_date }}</td>
+        </tr>
+    </table>
+    <button><a href="{% url 'polls:results' question_details.id %}">Check Results</a></button>
+{% else %}
+    <p>No Data available</p>
+{% endif %}
