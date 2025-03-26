@@ -40,10 +40,10 @@ class StaffItemView(APIView):
             {"Message": "Table is empty"}, status=status.HTTP_204_NO_CONTENT
         )
 
-    def put(self, request, name, *args, **kwargs):
+    def put(self, request, id, *args, **kwargs):
         """This function is to PUT data in DB"""
 
-        item = get_object_or_404(Item, name=name)
+        item = get_object_or_404(Item, id=id)
 
         serialize = UpdateItemSerializer(item, data=request.data)
         if serialize.is_valid():
@@ -55,12 +55,12 @@ class StaffItemView(APIView):
             {"Errors": serialize.errors}, status=status.HTTP_400_BAD_REQUEST
         )
 
-    def patch(self, request, name, *args, **kwargs):
+    def patch(self, request, id, *args, **kwargs):
         """This function is to PUT data in DB"""
 
-        item = get_object_or_404(Item, name=name)
+        item = get_object_or_404(Item, id=id)
 
-        serialize = UpdateItemSerializer(item, data=request.data)
+        serialize = UpdateItemSerializer(item, data=request.data, partial=True)
         if serialize.is_valid():
             serialize.save()
             return Response(
@@ -70,8 +70,8 @@ class StaffItemView(APIView):
             {"Errors": serialize.errors}, status=status.HTTP_400_BAD_REQUEST
         )
 
-    def delete(self, request, name, *args, **kwargs):
+    def delete(self, request, id, *args, **kwargs):
         """This function is to DELETE data in DB."""
-        item = get_object_or_404(Item, name=name)
+        item = get_object_or_404(Item, id=id)
         item.delete()
         return Response({"message": "Item deleted successfully"})
