@@ -25,11 +25,12 @@ from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("logout", views.user_logout, name="logout"),
     path("management/", include("management.urls")),
     path("customer/", include("customer.urls")),
     path("register/", views.register, name="register_user"),
     path("login/", views.user_login, name="login"),
-    path("", RedirectView.as_view(url="/login/"), name="landing_page"),
+    path("", views.about, name="landing_page"),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
