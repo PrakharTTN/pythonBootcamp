@@ -1,42 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Confirmation</title>
-</head>
-<body>
-    <h1>Order Confirmation</h1>
-    
-    <p>Thank you for your order, {{ order.user.username }}!</p>
-    
-    <h3>Order Details:</h3>
-    <table border=1 style="text-align:center;">
-        <thead>
-            <tr>
-                <th>Item name</th>
-                <th></th>
-                <th>Quantity</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for item in order.order_details %}
-            <tr>
-                <td>{{ item.item_name }}</td>
-                <td></td>
-                <td>{{ item.quantity }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+{% extends 'base.html' %}
 
-    <p><strong>Status:</strong> {{ order.order_status }}</p>
-    <p><strong>Order Time:</strong> {{ order.order_time }}</p>
-    <p><strong>Order Total:</strong> Rs. {{ order.total_price }}</p>
+{% block title %}Order Confirmation{% endblock %}
 
+{% block content %}
+    <div class="order-confirmation">
+        <div style="margin-left: auto; margin-right: auto; max-width: 50%; text-align: center">
+        <h1 style="font-size: 300%; margin-bottom: 8%;">Order Confirmation</h1>
 
-    <br>
-    <a href="{% url 'customer:view_menu' %}">Go to Menu Page</a>
-</body>
-</html>
+        <h3>Thank you for your order, <strong>{{ order.user.username }}</strong>!</h3>
 
+        <h3>Order Details:</h3>
+        <table style="margin-bottom: 20px;">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity Ordered</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in order.order_details %}
+                <tr>
+                    <td>{{ item.item_name }}</td>
+                    <td>{{ item.quantity }}</td>
+                </tr>
+                {% endfor %}
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>Rs. {{ order.total_price }}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4><strong>Status:</strong> {{ order.order_status }}</h4>
+        <h4><strong>Order Time:</strong> {{ order.order_time }}</h4>
+
+        <br>
+        <div class="btn-box" style="margin-bottom: 10%;">
+            <a href="{% url 'customer:view_menu' %}" class="btn1">Back to Menu</a></div>
+        </div>
+        </div>
+{% endblock %}

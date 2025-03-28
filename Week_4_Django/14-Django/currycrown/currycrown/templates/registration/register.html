@@ -1,13 +1,25 @@
-<h1>Register</h1>
+{% extends 'base.html' %}
 
-<form method="POST" action="">
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<section id="register_user">
+  <h1 style="text-align: center;">Register</h1>
+  <form  style="width: 30%;" method="POST" action="">
     {% csrf_token %}
-    {{form.as_p}}
+    {{ form.as_p }}
+    
     {% if form.errors %}
+      <div class="form-errors">
         {% for error in form.errors %}
-            <p>{{ error }}</p>
+          <p>{{ error }}</p>
         {% endfor %}
+      </div>
     {% endif %}
 
-    <input type="submit" name="Create User" value="Create User">
-</form>
+    <div class="btn-box">
+        <button class="btn1" style="margin-bottom: 10%;" type="submit" name="Create User" value="Create User">Create User</button></div>
+    </div>
+  </form>
+</section>
+{% endblock %}

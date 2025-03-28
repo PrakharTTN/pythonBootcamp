@@ -1,25 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add/Update Menu Item</title>
-</head>
-<body>
-    <h1>Add/Update Menu Item</h1>
+{% extends 'base.html' %}
+
+{% block title %}Add/Update Menu Item{% endblock %}
+
+{% block content %}
+    <div class="content-container">
+        <h1 style="text-align: center; margin-bottom: 3%; font-size: 400%;">Menu Item</h1>
+        
+        <div class="form-container" style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                
+                <!-- Item Name Field -->
+                <div class="form-field">
+                    <label for="item_name" style="font-weight: bold;">Item Name:</label>
+                    {{ form.item_name }}
+                </div>
+                
+                <!-- Item Price Field -->
+                <div class="form-field">
+                    <label for="item_price" style="font-weight: bold;">Item Price:</label>
+                    {{ form.item_price }}
+                </div>
+                <!-- Item Description Field (Updated) -->
+                <div class="form-field">
+                    <label for="item_desc" style="font-weight: bold;">Item Description:</label>
+                    <textarea name="item_desc" id="item_desc" rows="4" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd; font-size: 16px; margin: 10px 0;">{% if form.item_desc.value %}{{ form.item_desc.value }}{% else %}{% endif %}</textarea>
+                </div>
+                <!-- Item Rating Field -->
+                <div class="form-field">
+                    <label for="item_rating" style="font-weight: bold;">Item Rating:</label>
+                    {{ form.item_rating }}
+                </div>
+                
+                <!-- Item Image Field -->
+                <div class="form-field">
+                    <label for="item_image" style="font-weight: bold;">Item Image:</label>
+                    {{ form.item_image }}
+                </div>
+                
+                {% if form.errors %}
+                    <div class="form-errors" style="color: red; margin-bottom: 20px;">
+                        {% for error in form.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                
+                <div class="button-container" style="text-align: center;">
+                    <button type="submit" class="submit-button">Add Item</button>
+                </div>
+            </form>
+        </div>
+
+        <br>
+        <div style="text-align: center; margin-bottom: 3%;">
+            <a href="{% url 'management:view_menu' %}" style="text-decoration: none; color: #909a05; font-size: 16px; font-weight: bold; transition: color 0.3s;">
+                Back to Menu
+            </a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .submit-button {
+        padding: 10px 55px;
+        background-color: #ffbe33;
+        color: white;
+        border-radius: 45px;
+        text-transform: uppercase;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
     
-    <form method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{form.as_p}}
-        {% if form.errors %}
-            {% for error in form.errors %}
-                <p>{{ error }}</p>
-            {% endfor %}
-        {% endif %}
-        <button type="submit">Add Item</button>
-    </form>
-    
-    <br>
-    <a href="{% url 'management:view_menu' %}">Back to Menu</a>
-</body>
-</html>
+    .submit-button:hover {
+        background-color: #e69c00;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+    }
+
+    .form-container input[type="file"] {
+        border: none;
+    }
+
+    .form-container select {
+        background-color: #f3f3f3;
+    }
+
+    .form-field {
+        margin-bottom: 15px;
+    }
+
+    .form-errors p {
+        font-size: 14px;
+        color: red;
+    }
+
+    a:hover {
+        color: #ff9800;
+    }
+</style>
+{% endblock %}

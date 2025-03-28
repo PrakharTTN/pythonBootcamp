@@ -1,55 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Approve Order</title>
-</head>
-<body>
-    <h1>Approve Order</h1>
-    
-    <h2>Order Details</h2>
-    <table border = 1 style="text-align:center;">
-        <tr>
-            <th>Order ID</th>
-            <td>{{ order.order_id }}</td>
-        </tr>
-        <tr>
-            <th>Customer Name</th>
-            <td>{{ order.user.username }}</td>
-        </tr>
-        <tr>
-            <th>Order Total</th>
-            <td> Rs. {{ order.total_price }}</td>
-        </tr>
-        <tr>
-            <th>Order Time</th>
-            <td>{{ order.order_time }}</td>
-        </tr>
-        <tr>
-            <th>Order Status</th>
-            <td>{{ order.order_status }}</td>
-        </tr>
-    </table>
+{% extends 'base.html' %}
 
-]    <form method="POST">
-        {% csrf_token %}
-        
-        <label for="Updated status">Select New Status:</label>
-        <select name="Updated status" id="Updated status" type="Updated status">
-            <option value="pending" {% if order.order_status == "pending" %}selected{% endif %}>Pending</option>
-            <option value="complete" {% if order.order_status == "completed" %}selected{% endif %}>Completed</option>
-            <option value="cancelled" {% if order.order_status == "Cancelled" %}selected{% endif %}>Cancelled</option>
+{% block title %}Approve Order{% endblock %}
+
+{% block content %}
+    <div class="order-header">
+        <h1 style="text-align: center; margin-bottom: 3%; font-size: 400%;">Approve Order</h1>
+    </div>
+    
+    <h3 style="text-align: center;">Order Details</h3>
+    
+    <div class="order-details" style="text-align: center;">
+        <table border="1" style="width: 50%; margin: 20px auto; text-align: center;">
+            <tr>
+                <th>Order ID</th>
+                <td>{{ order.order_id }}</td>
+            </tr>
+            <tr>
+                <th>Customer Name</th>
+                <td>{{ order.user.username }}</td>
+            </tr>
+            <tr>
+                <th>Order Total</th>
+                <td> Rs. {{ order.total_price }}</td>
+            </tr>
+            <tr>
+                <th>Order Time</th>
+                <td>{{ order.order_time }}</td>
+            </tr>
+            <tr>
+                <th>Order Status</th>
+                <td>{{ order.order_status }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="update-status-form" style="text-align: center; margin-top: 30px;">
+        <form method="POST">
+            {% csrf_token %}
             
-        </select>
-        
-        <br><br>
-        <button type="submit">Update Status</button>
-        <br><br>
-        <a href="{% url 'management:show_orders' %}">Go back to orders</a>
-    </form>
+            <label for="Updated status" style="font-size: 18px; font-weight: bold; color: #333; margin-right: 10px;">Select New Status:</label>
+            
+            <select name="Updated status" id="Updated status" style="padding: 8px 12px; font-size: 14px; background-color: #f0f0f0; border: 2px solid #ff9800; color: #333; border-radius: 5px; text-align: center; width: 160px; display: inline-block; margin-left: 10px; transition: all 0.3s;">
+                <option value="pending" {% if order.order_status == "pending" %}selected{% endif %}>Pending</option>
+                <option value="complete" {% if order.order_status == "completed" %}selected{% endif %}>Completed</option>
+                <option value="cancelled" {% if order.order_status == "Cancelled" %}selected{% endif %}>Cancelled</option>
+            </select>
+            
+            <br><br>
+            <button type="submit" style="width: 20%; padding: 10px 20px; background-color: #ffbe33; border: none; color: white; border-radius: 5px; text-transform: uppercase; transition: all 0.3s;">Update Status</button>
+            <br><br>
+            <a href="{% url 'management:show_orders' %}" style="text-decoration: none; color: #4CAF50; font-weight: bold;">Go back to orders</a>
+        </form>
+    </div>
 
     <br>
-
-</body>
-</html>
+{% endblock %}
