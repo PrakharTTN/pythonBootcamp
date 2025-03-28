@@ -5,12 +5,23 @@ from management.models import Menu
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.shortcuts import render
 
 
 @login_required
 def view_menu(request):
     menu_items = Menu.objects.all()
-    return render(request, "customer/view_menu.html", {"menu_items": menu_items})
+    paginator = Paginator(menu_items, 5)
+    page = request.GET.get("page")
+
+    try:
+        items = paginator.page(page)
+    except PageNotAnInteger:
+        items = paginator.page(1)
+    except EmptyPage:
+        items = paginator.page(paginator.num_pages)
+    return render(request, "customer/view_menu.html", {"menu_items": items})
 
 
 @login_required
