@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.core.exceptions import ObjectDoesNotExist
 from .models import Orders
 from management.models import Menu
 from django.contrib.auth.models import User
@@ -12,48 +13,45 @@ def view_menu(request):
     return render(request, "customer/view_menu.html", {"menu_items": menu_items})
 
 
-# TODO: Handle exceptions:
-# ValueError - When quantity is not a valid integer or is out of range not between 1 and 5.
-# KeyError- When an invalid menu item not in the valid_menu_items is selected.
-# Empty order- When no valid menu items are selected or quantities are provided.
 @login_required
 def place_order(request):
     if request.method == "POST":
-        menu_items = request.POST.getlist("menu_items")
-        quantities = request.POST.getlist("quantities")
-        quantities = [i for i in quantities if int(i) != 0]
+        menu_items = []
+        quantities = []
         valid_items = []
         total = 0
-
         valid_menu_items = {
             item.item_name: item.item_price for item in Menu.objects.all()
         }
-        for item_name, quantity in zip(menu_items, quantities):
-            try:
-                quantity = int(quantity)
-                if quantity < 1 or quantity > 5:
-                    raise ValueError
 
-            except ValueError:
+        for key, value in request.POST.items():
+            if key == "csrfmiddlewaretoken" or value == "0":
+                continue  # Skip CSRF token or zero quantities
+
+            try:
+                menu_item = Menu.objects.get(item_id=key)
+                menu_items.append(menu_item.item_name)
+                quantities.append(int(value))
+
+            except ObjectDoesNotExist:
+                messages.error(request, f"Menu item with ID {key} not found.")
+                return redirect("customer:place_order")
+
+        # Validate quantities and check if menu items are valid
+        for item_name, quantity in zip(menu_items, quantities):
+            if not (1 <= quantity <= 5):
                 messages.error(
                     request,
-                    f"Invalid quantity for {item_name}. Please enter a whole number between 1 and 5.",
+                    f"Invalid quantity for {item_name}. Enter a number between 1 and 5.",
                 )
                 return redirect("customer:place_order")
 
             if item_name not in valid_menu_items:
-                messages.error(request, "Invalid menu item detected.")
+                messages.error(request, f"Invalid menu item: {item_name}.")
                 return redirect("customer:place_order")
 
             valid_items.append((item_name, quantity))
             total += valid_menu_items[item_name] * quantity
-
-        if not valid_items:
-            messages.error(
-                request,
-                "Please select at least one valid menu item with a valid quantity.",
-            )
-            return redirect("customer:place_order")
 
         order_details = [
             {"item_name": item_name, "quantity": quantity}
