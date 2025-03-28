@@ -1,5 +1,3 @@
-"""Import libraries"""
-
 from customer.models import Orders
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
@@ -8,6 +6,9 @@ from .models import Menu
 from .forms import MenuForm, UpdateMenuForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.admin.views.decorators import staff_member_required
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.shortcuts import render
+from .models import Menu
 
 
 @login_required(login_url="/login")
@@ -36,7 +37,17 @@ def add_menu_item(request):
 def view_menu(request):
     """This is to view the whole menu"""
     menu_items = Menu.objects.all()
-    return render(request, "management/view_menu.html", {"menu_items": menu_items})
+    paginator = Paginator(menu_items, 5)
+    page = request.GET.get("page")
+
+    try:
+        items = paginator.page(page)
+    except PageNotAnInteger:
+        items = paginator.page(1)
+    except EmptyPage:
+        items = paginator.page(paginator.num_pages)
+
+    return render(request, "management/view_menu.html", {"menu_items": items})
 
 
 @login_required(login_url="/login")
