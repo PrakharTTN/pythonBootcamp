@@ -91,5 +91,5 @@ def view_orders(request, user_id):
     if request.user.id != user_id:
         return redirect("customer:view_menu")
 
-    orders = Orders.objects.filter(user=request.user)
+    orders = Orders.objects.select_related("user").filter(user=request.user)
     return render(request, "customer/show_orders.html", {"orders": orders})
