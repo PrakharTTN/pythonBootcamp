@@ -1,0 +1,12 @@
+Request: GET / from 127.0.0.1
+Request: GET / from 127.0.0.1
+Request: GET /login/ from 127.0.0.1
+Request: POST /login/ from 127.0.0.1
+Request: GET /customer/view/ from 127.0.0.1
+Request: GET /customer/place_order/ from epic
+Request: GET /logout from epic
+Request: GET / from AnonymousUser
+Request: GET / from AnonymousUser
+Request: GET /login/ from AnonymousUser
+Request: POST /login/ from AnonymousUser
+Request: GET /customer/view/ from epic
