@@ -9,6 +9,8 @@ class QuestionAdmin(admin.ModelAdmin):
         ("Date Info", {"fields": ["pub_date"]}),
     ]
 
+    #    fields = ["pub_date", "question_text"]
+
 
 admin.site.register(QuestionModel, QuestionAdmin)
 
