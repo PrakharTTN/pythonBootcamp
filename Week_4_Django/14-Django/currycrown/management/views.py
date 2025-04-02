@@ -1,14 +1,13 @@
-from customer.models import Orders
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Menu
-from .forms import MenuForm, UpdateMenuForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.admin.views.decorators import staff_member_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render
+from customer.models import Orders
 from .models import Menu
+from .forms import MenuForm, UpdateMenuForm
 
 
 @login_required(login_url="/login")
@@ -54,7 +53,7 @@ def view_menu(request):
 @staff_member_required
 def specific_view_menu(request):
     """This is to view specific menu"""
-    q = Q(item_price__gt=500)
+    q = Q(item_price__gt=500) | Q(item_name__contains="a")
     menu_items = Menu.objects.filter(q)
     return render(request, "management/view_menu.html", {"menu_items": menu_items})
 
@@ -92,13 +91,15 @@ def remove_menu_item(request, item_id):
 @login_required(login_url="/login")
 @staff_member_required
 def show_orders(request):
-    orders = Orders.objects.all()
+    orders = Orders.objects.select_related("user").all()
     if request.method == "POST":
         specific_orders = request.POST.get("specific", "")
         if specific_orders:
-            orders = Orders.objects.filter(order_status=specific_orders)
+            orders = Orders.objects.select_related("user").filter(
+                order_status=specific_orders
+            )
         else:
-            orders = Orders.objects.all()
+            orders = Orders.objects.select_related("user").all()
     return render(request, "management/show_orders.html", {"orders": orders})
 
 
