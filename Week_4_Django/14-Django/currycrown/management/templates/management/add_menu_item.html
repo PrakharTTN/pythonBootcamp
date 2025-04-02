@@ -14,38 +14,67 @@
                 <div class="form-field">
                     <label for="item_name" style="font-weight: bold;">Item Name:</label>
                     {{ form.item_name }}
+                    {% if form.item_name.errors %}
+                        <div class="error-message" style="color: red; font-size: 14px; margin-top: 5px;">
+                            {% for error in form.item_name.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
-                
+
                 <!-- Item Price Field -->
                 <div class="form-field">
                     <label for="item_price" style="font-weight: bold;">Item Price:</label>
                     {{ form.item_price }}
+                    {% if form.item_price.errors %}
+                        <div class="error-message" style="color: red; font-size: 14px; margin-top: 5px;">
+                            {% for error in form.item_price.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
-                <!-- Item Description Field (Updated) -->
+                
+                <!-- Item Description Field -->
                 <div class="form-field">
                     <label for="item_desc" style="font-weight: bold;">Item Description:</label>
                     <textarea name="item_desc" id="item_desc" rows="4" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd; font-size: 16px; margin: 10px 0;">{% if form.item_desc.value %}{{ form.item_desc.value }}{% else %}{% endif %}</textarea>
+                    {% if form.item_desc.errors %}
+                        <div class="error-message" style="color: red; font-size: 14px; margin-top: 5px;">
+                            {% for error in form.item_desc.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
+
                 <!-- Item Rating Field -->
                 <div class="form-field">
                     <label for="item_rating" style="font-weight: bold;">Item Rating:</label>
                     {{ form.item_rating }}
+                    {% if form.item_rating.errors %}
+                        <div class="error-message" style="color: red; font-size: 14px; margin-top: 5px;">
+                            {% for error in form.item_rating.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
                 
                 <!-- Item Image Field -->
                 <div class="form-field">
                     <label for="item_image" style="font-weight: bold;">Item Image:</label>
                     {{ form.item_image }}
+                    {% if form.item_image.errors %}
+                        <div class="error-message" style="color: red; font-size: 14px; margin-top: 5px;">
+                            {% for error in form.item_image.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
-                
-                {% if form.errors %}
-                    <div class="form-errors" style="color: red; margin-bottom: 20px;">
-                        {% for error in form.errors %}
-                            <p>{{ error }}</p>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-                
+
                 <div class="button-container" style="text-align: center;">
                     <button type="submit" class="submit-button">Add Item</button>
                 </div>
@@ -74,7 +103,7 @@
         cursor: pointer;
         transition: background-color 0.3s;
     }
-    
+
     .submit-button:hover {
         background-color: #e69c00;
     }
@@ -102,7 +131,7 @@
         margin-bottom: 15px;
     }
 
-    .form-errors p {
+    .error-message p {
         font-size: 14px;
         color: red;
     }
