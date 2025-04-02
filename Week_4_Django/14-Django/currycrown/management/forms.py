@@ -20,21 +20,21 @@ class MenuForm(forms.ModelForm):
             raise ValidationError("Menu Item Exists")
         return item_name
 
+    def clean_item_image(self):
+        limit = 5 * 1024 * 1024
+        item_image = self.cleaned_data.get("item_image")
+        print(item_image.size)
 
-class MenuForm(forms.ModelForm):
-    """Class to create menu form"""
+        if item_image:
+            if item_image.size > limit:
+                raise ValidationError("Image size should not exceed 5MB.")
 
-    class Meta:
-        """This defines the form's layout"""
+            if not item_image.name.endswith(("jpg", "png")):
+                raise ValidationError(
+                    "Invalid Image Format. Only jpg and png are allowed."
+                )
 
-        model = Menu
-        fields = ["item_name", "item_price", "item_desc", "item_rating", "item_image"]
-
-    def clean_item_name(self):
-        item_name = self.cleaned_data.get("item_name")
-        if Menu.objects.filter(item_name=item_name.title()).exists():
-            raise ValidationError("Menu Item Exists")
-        return item_name.title()
+        return item_image
 
 
 class UpdateMenuForm(MenuForm):
