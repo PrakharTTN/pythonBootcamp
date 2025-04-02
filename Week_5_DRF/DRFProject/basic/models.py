@@ -10,3 +10,6 @@ class Item(models.Model):
     quantity = models.IntegerField(
         default=1, validators=[validate_number, validate_quantity]
     )
+
+    def __str__(self):
+        return self.name
