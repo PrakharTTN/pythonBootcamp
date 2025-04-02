@@ -12,12 +12,6 @@ from .forms import MenuForm, UpdateMenuForm
 
 @login_required(login_url="/login")
 @staff_member_required
-def landing_page(request):
-    return render(request, "management/landing_page.html")
-
-
-@login_required(login_url="/login")
-@staff_member_required
 def add_menu_item(request):
     """This view is to add any dish item"""
     if request.method == "POST":
@@ -91,6 +85,8 @@ def remove_menu_item(request, item_id):
 @login_required(login_url="/login")
 @staff_member_required
 def show_orders(request):
+    """This is to show all the orders of the user"""
+
     orders = Orders.objects.select_related("user").all()
     if request.method == "POST":
         specific_orders = request.POST.get("specific", "")
@@ -107,6 +103,7 @@ def show_orders(request):
 @staff_member_required
 def approve_order(request, order_id):
     """This is to approve order to approve"""
+
     myorder = Orders.objects.get(order_id=order_id)
     if request.method == "POST":
         updated_status = request.POST["Updated status"]
