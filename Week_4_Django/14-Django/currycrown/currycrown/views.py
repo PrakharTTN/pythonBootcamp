@@ -25,6 +25,8 @@ def user_login(request):
                 return redirect("landing_page")
             else:
                 return redirect("customer:view_menu")
+        else:
+            return render(request, "registration/login.html", {"form": form})
     if request.user.is_authenticated:
         return redirect("landing_page")
     form = AuthenticationForm()
