@@ -10,6 +10,8 @@ ORDER_STATUS_CHOICES = [
 
 
 class Orders(models.Model):
+    """This Model is to create orders based with foreign key of user"""
+
     order_id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="customer")
     order_details = models.JSONField()
