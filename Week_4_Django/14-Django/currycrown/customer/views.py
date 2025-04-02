@@ -11,6 +11,8 @@ from django.shortcuts import render
 
 @login_required
 def view_menu(request):
+    """This view is to show the menu"""
+
     menu_items = Menu.objects.all()
     paginator = Paginator(menu_items, 5)
     page = request.GET.get("page")
@@ -26,6 +28,8 @@ def view_menu(request):
 
 @login_required
 def place_order(request):
+    """This view is to place an order"""
+
     if request.method == "POST":
         menu_items = []
         quantities = []
@@ -82,12 +86,16 @@ def place_order(request):
 
 @login_required
 def order_confirmation(request, order_id):
+    """This is to get the order confirmation"""
+
     order = get_object_or_404(Orders, order_id=order_id)
     return render(request, "customer/order_confirmation.html", {"order": order})
 
 
 @login_required
 def view_orders(request, user_id):
+    """This is to view orders of specific user"""
+    # Even though user is logged in, can access other user, so make sure user_id is the same as the request from user
     if request.user.id != user_id:
         return redirect("customer:view_menu")
 
