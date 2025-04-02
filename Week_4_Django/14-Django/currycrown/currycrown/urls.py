@@ -22,6 +22,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic.base import RedirectView
 from . import views
+from debug_toolbar.toolbar import debug_toolbar_urls
+
+
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -31,6 +35,6 @@ urlpatterns = [
     path("register/", views.register, name="register_user"),
     path("login/", views.user_login, name="login"),
     path("", views.about, name="landing_page"),
-]
+] + debug_toolbar_urls()
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
