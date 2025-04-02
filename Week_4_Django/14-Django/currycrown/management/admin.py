@@ -11,6 +11,8 @@ admin.site.index_title = "Welcome to CurryCrown Admin"
 
 @admin.action(description="Mark Completed")
 def mark_complete(model_admin, request, queryset):
+    """This custom function is to mark order complete"""
+
     queryset.update(order_status="complete")
     for q in queryset:
         q.save()
@@ -18,6 +20,8 @@ def mark_complete(model_admin, request, queryset):
 
 @admin.action(description="Download CSV")
 def download_csv(model_admin, request, queryset):
+    """As part of question, Added download CSV for the items"""
+
     response = HttpResponse(content_type="text/csv")
     response["Content-Disposition"] = 'attachment; filename="Items.csv"'
     writer = csv.writer(response)
@@ -34,6 +38,8 @@ def download_csv(model_admin, request, queryset):
 
 
 class MenuItemPriceFilter(admin.SimpleListFilter):
+    """This class is to filter the Menu items based on price"""
+
     title = "Price Range"
     parameter_name = "price"
 
@@ -58,6 +64,8 @@ class MenuItemPriceFilter(admin.SimpleListFilter):
 
 @admin.register(Menu)
 class MenuItemAdmin(admin.ModelAdmin):
+    """This is to customize Menu Item, basically add filters"""
+
     list_display = ("item_id", "item_name", "item_price", "item_rating")
     search_fields = ("item_name",)
     list_filter = (MenuItemPriceFilter,)
@@ -66,6 +74,8 @@ class MenuItemAdmin(admin.ModelAdmin):
 
 @admin.register(Orders)
 class OrderAdmin(admin.ModelAdmin):
+    """This registers the model and creates customization like filters and all"""
+
     list_display = ("order_id", "order_details", "order_status", "order_time")
     search_fields = ("order_id",)
     actions = [mark_complete]
