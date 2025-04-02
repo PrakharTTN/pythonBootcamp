@@ -138,8 +138,6 @@ LOGIN_URL = "/login/"
 # settings.py
 import os
 
-import os
-
 
 LOGGING = {
     "version": 1,
@@ -192,7 +190,7 @@ LOGGING = {
             "propagate": False,
         },
         "django": {
-            "handlers": ["django_file"],  # Use the defined django_file handler
+            "handlers": ["django_file"],  
             "level": "INFO",
             "propagate": True,
         },
@@ -203,3 +201,4 @@ LOGGING = {
         },
     },
 }
+
