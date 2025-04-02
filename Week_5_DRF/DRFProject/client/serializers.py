@@ -34,12 +34,8 @@ class UserOrderModelSerializer(serializers.ModelSerializer):
         model = UserOrderModel
         fields = ["id", "user", "orderitems", "order_date", "total_price"]
 
-    def create(self, validated_data):
-        orderitems_data = validated_data.pop(
-            "orderitem_set"
-        )  # Get the data from the source field
-        order = UserOrderModel.objects.create(**validated_data)
-
+    def validate_orderitems(self, orderitems_data):
+        """Custom validation for stock availability in orderitems."""
         for item_data in orderitems_data:
             item = item_data["item"]
             quantity = item_data["quantity"]
@@ -47,6 +43,15 @@ class UserOrderModelSerializer(serializers.ModelSerializer):
                 raise ValidationError(
                     f"Not enough stock for {item.name}. Available: {item.quantity}, Requested: {quantity}"
                 )
+        return orderitems_data
+
+    def create(self, validated_data):
+        orderitems_data = validated_data.pop("orderitem_set")
+        order = UserOrderModel.objects.create(**validated_data)
+
+        for item_data in orderitems_data:
+            item = item_data["item"]
+            quantity = item_data["quantity"]
             item.quantity -= quantity
             item.save()
             OrderItem.objects.create(order=order, item=item, quantity=quantity)
