@@ -3,9 +3,8 @@ from . import views
 
 app_name = "management"  # This is to namespace your app's URLs
 
-urlpatterns = [
-    path("landing_page/", views.landing_page, name="landing_page"),
-]
+urlpatterns = []
+
 menu_task = [
     path("add/", views.add_menu_item, name="add_menu_item"),
     path("view/", views.view_menu, name="view_menu"),
