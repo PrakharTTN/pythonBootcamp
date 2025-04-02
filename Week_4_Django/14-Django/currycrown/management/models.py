@@ -2,6 +2,8 @@ from django.db import models
 
 
 class Menu(models.Model):
+    """Menu Model"""
+
     item_id = models.AutoField(primary_key=True)
     item_name = models.CharField(max_length=100)
     item_image = models.ImageField(upload_to="image")
