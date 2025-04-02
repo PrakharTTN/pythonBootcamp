@@ -6,13 +6,27 @@
 <section id="login_user">
   <div style="width: 30%; margin: auto; margin-bottom: 2rem;">
     <h1 style="text-align: center;">Login</h1>
+
     <form method="post">
       {% csrf_token %}
-      {{ form.as_p }}
-      <br>
+      {%for field in form %}
+      <div>
+        <label for="{{field.id_for_label}}">{{field.label}}</label>
+        <br>
+        {{field}}
+        {% if field.errors %}
+        <div style="color: red;" class="form-errors">
+          {% for error in field.errors %}
+            <p>{{ error }}</p>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+    {% endfor %}
+    <small style="color:red">{{form.non_field_errors.0}}</small>
+     <br>
       <div class="btn-box">
         <button class="btn1" type="submit">Log In</button></div>
-      <br>
       <br>
       <a href="{% url 'register_user' %}">Register</a>
       <br>
