@@ -1,21 +1,9 @@
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
-from PIL import Image
-from django.core.exceptions import ValidationError
-from django.conf import settings
-import os
-import logging
-from .models import Menu
-
-logger = logging.getLogger(__name__)
-
-
-from django.db.models.signals import post_save
-from django.dispatch import receiver
-from PIL import Image
 from django.core.files.storage import default_storage
-from django.core.files.base import ContentFile
+from PIL import Image
 from .models import Menu
+import os
 
 
 @receiver(post_save, sender=Menu)
