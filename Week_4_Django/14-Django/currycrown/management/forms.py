@@ -29,7 +29,7 @@ class MenuForm(forms.ModelForm):
             if item_image.size > limit:
                 raise ValidationError("Image size should not exceed 5MB.")
 
-            if not item_image.name.endswith(("jpg", "png")):
+            if not item_image.name.endswith(("jpg", "png", "jpeg")):
                 raise ValidationError(
                     "Invalid Image Format. Only jpg and png are allowed."
                 )
