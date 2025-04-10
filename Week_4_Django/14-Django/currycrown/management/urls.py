@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 
-app_name = "management"  # This is to namespace your app's URLs
+app_name = "management"  
 
 urlpatterns = []
 
