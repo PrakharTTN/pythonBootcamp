@@ -2,16 +2,46 @@
 
 {% block title %}Place Order{% endblock %}
 
+
 {% block content %}
+    <style>
+        /* Style for error messages */
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Style for success messages */
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Container to hold messages */
+        .messages {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+
     {% if messages %}
-        {% for message in messages %}
-            {% if message.tags == 'error' %}
-                error-message
-            {% else %}
-                success-message
-            {% endif %}
-                {{ message }}
-        {% endfor %}
+        <div class="messages">
+            {% for message in messages %}
+                <div class="message {% if message.tags == 'error' %}error-message{% else %}success-message{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
     {% endif %}
 
     <div class="menu">
