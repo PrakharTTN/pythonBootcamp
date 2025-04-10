@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Results</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .content {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .summary {
+            margin-bottom: 30px;
+        }
+
+        .summary ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .summary li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .summary li strong {
+            color: #3498db;
+        }
+
+        .charts {
+            margin-bottom: 30px;
+        }
+
+        .charts h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .charts img {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .portfolio-data h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .table-responsive {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #fafafa;
+        }
+
+        .table-responsive table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-responsive th, .table-responsive td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table-responsive th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .table-responsive tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portfolio Analysis Results</h1>
+        </header>
+        
+        <div class="content">
+            <h2>Portfolio Summary</h2>
+            <div class="summary">
+                <ul>
+                    <li><strong>Total Portfolio Value:</strong> Rs. {{ portfolio_summary.Total_Portfolio_Value }}</li>
+                    <li><strong>Total Portfolio Profit:</strong> Rs. {{ portfolio_summary.Total_Portfolio_Profit }}</li>
+                    <li><strong>Portfolio Return:</strong> {{ portfolio_summary.Portfolio_Return }}%</li>
+                </ul>
+            </div>
+            <div class="portfolio-data">
+                <h3>Portfolio Data</h3>
+                <div class="table-responsive">
+                    {{ df|safe }}
+                </div>
+            </div>
+            <div class="charts">
+                <h3>Stock Contribution in Portfolio</h3>
+                <img src="data:image/png;base64,{{ pie_chart_base64 }}" alt="Stock Contribution Pie Chart">
+
+                <h3>Top 5 Most Profitable Stocks</h3>
+                <img src="data:image/png;base64,{{ bar_chart_base64 }}" alt="Top 5 Profitable Stocks">
+
+                <h3>Top 5 Most Losing Stocks</h3>
+                <img src="data:image/png;base64,{{ loser_chart_base64 }}" alt="Top 5 Losing Stocks">
+
+                <h3>Stocks Ranked by ROI</h3>
+                <img src="data:image/png;base64,{{ roi_chart_base64 }}" alt="Stocks Ranked by ROI">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
