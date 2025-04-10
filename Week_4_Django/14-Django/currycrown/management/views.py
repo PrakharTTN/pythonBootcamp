@@ -87,12 +87,14 @@ def remove_menu_item(request, item_id):
 def show_orders(request):
     """This is to show all the orders of the user"""
 
-    orders = Orders.objects.select_related("user").all()
+    orders = Orders.objects.select_related("user").all().order_by("-order_time")
     if request.method == "POST":
         specific_orders = request.POST.get("specific", "")
         if specific_orders:
-            orders = Orders.objects.select_related("user").filter(
-                order_status=specific_orders
+            orders = (
+                Orders.objects.select_related("user")
+                .filter(order_status=specific_orders)
+                .order_by("-order_time")
             )
         else:
             orders = Orders.objects.select_related("user").all()
