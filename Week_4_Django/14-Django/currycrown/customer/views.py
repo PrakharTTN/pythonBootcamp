@@ -52,7 +52,10 @@ def place_order(request):
                 messages.error(request, f"Menu item with ID {key} not found.")
                 return redirect("customer:place_order")
 
-        # Validate quantities and check if menu items are valid
+        if not menu_items:
+            messages.error(request, f"Please select at least one item")
+            return redirect("customer:place_order")
+
         for item_name, quantity in zip(menu_items, quantities):
             if not (1 <= quantity <= 5):
                 messages.error(
@@ -99,5 +102,9 @@ def view_orders(request, user_id):
     if request.user.id != user_id:
         return redirect("customer:view_menu")
 
-    orders = Orders.objects.select_related("user").filter(user=request.user)
+    orders = (
+        Orders.objects.select_related("user")
+        .filter(user=request.user)
+        .order_by("-order_time")
+    )
     return render(request, "customer/show_orders.html", {"orders": orders})
