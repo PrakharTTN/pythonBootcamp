@@ -1,0 +1,141 @@
+[2025-04-18T10:16:56.107+0530] {processor.py:186} INFO - Started process (PID=18256) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:16:56.108+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:16:56.109+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:56.109+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:16:56.356+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:16:56.367+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:56.367+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:16:56.373+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:56.373+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:16:56.532+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.429 seconds
+[2025-04-18T10:18:07.492+0530] {processor.py:186} INFO - Started process (PID=19081) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:18:07.597+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:18:07.599+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:07.598+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:18:07.857+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:18:07.917+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:07.917+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:18:08.026+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:08.026+0530] {dag.py:3262} INFO - Creating ORM DAG for excel_data_analysis
+[2025-04-18T10:18:08.027+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:08.027+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:18:08.098+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.610 seconds
+[2025-04-18T10:18:46.956+0530] {processor.py:186} INFO - Started process (PID=19556) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:18:47.000+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:18:47.001+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:47.001+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:18:47.240+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:18:47.248+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:47.247+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:18:47.253+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:47.253+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:18:47.357+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.406 seconds
+[2025-04-18T10:19:27.234+0530] {processor.py:186} INFO - Started process (PID=20044) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:19:27.245+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:19:27.246+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:27.246+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:19:27.484+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:19:27.491+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:27.491+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:19:27.580+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:27.580+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:19:27.697+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.467 seconds
+[2025-04-18T10:19:38.034+0530] {processor.py:186} INFO - Started process (PID=20179) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:19:38.035+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:19:38.036+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:38.036+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:19:38.310+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:19:38.322+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:38.322+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:19:38.330+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:38.330+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:19:38.446+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.416 seconds
+[2025-04-18T10:20:48.479+0530] {processor.py:186} INFO - Started process (PID=20976) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:20:48.505+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:20:48.509+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:20:48.508+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:20:48.756+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:20:48.764+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:20:48.764+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:20:48.770+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:20:48.770+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:20:48.982+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.508 seconds
+[2025-04-18T10:21:35.801+0530] {processor.py:186} INFO - Started process (PID=21622) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:21:35.858+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:21:35.861+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:21:35.860+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:21:36.148+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:21:36.165+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:21:36.165+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:21:36.172+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:21:36.172+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:21:36.315+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.518 seconds
+[2025-04-18T10:22:25.330+0530] {processor.py:186} INFO - Started process (PID=22187) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:22:25.343+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:22:25.344+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:22:25.344+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:22:25.612+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:22:25.621+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:22:25.620+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:22:25.740+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:22:25.740+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:22:25.879+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.553 seconds
+[2025-04-18T10:23:26.394+0530] {processor.py:186} INFO - Started process (PID=22840) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:23:26.409+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:23:26.411+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:23:26.410+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:23:26.675+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:23:26.682+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:23:26.682+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:23:26.689+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:23:26.689+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:23:26.782+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.392 seconds
+[2025-04-18T10:24:04.534+0530] {processor.py:186} INFO - Started process (PID=23114) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:24:04.549+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:24:04.550+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:04.550+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:24:04.801+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:24:04.908+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:04.907+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:24:04.915+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:04.915+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:24:04.993+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.462 seconds
+[2025-04-18T10:24:44.233+0530] {processor.py:186} INFO - Started process (PID=23406) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:24:44.234+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:24:44.236+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:44.236+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:24:44.493+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:24:44.501+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:44.501+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:24:44.509+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:44.508+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:24:44.705+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.475 seconds
+[2025-04-18T10:25:22.671+0530] {processor.py:186} INFO - Started process (PID=23566) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:25:22.704+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:25:22.706+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:22.706+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:25:23.063+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:25:23.069+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:23.069+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:25:23.075+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:23.075+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:25:23.182+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.516 seconds
+[2025-04-18T10:26:00.775+0530] {processor.py:186} INFO - Started process (PID=23830) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:26:00.776+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:26:00.777+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:00.777+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:26:01.114+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:26:01.121+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:01.120+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:26:01.127+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:01.126+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:26:01.214+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.443 seconds
+[2025-04-18T10:26:39.988+0530] {processor.py:186} INFO - Started process (PID=23995) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:26:39.989+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:26:39.990+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:39.990+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:26:40.427+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:26:40.435+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:40.435+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:26:40.442+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:40.442+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:26:40.539+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.556 seconds
+[2025-04-18T10:27:22.448+0530] {processor.py:186} INFO - Started process (PID=24082) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:27:22.478+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:27:22.482+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:27:22.481+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:27:23.013+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:27:23.019+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:27:23.019+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:27:23.028+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:27:23.028+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:27:23.117+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.678 seconds
+[2025-04-18T10:28:02.573+0530] {processor.py:186} INFO - Started process (PID=24211) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:28:02.593+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:28:02.595+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:02.594+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:28:03.004+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:28:03.013+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:03.013+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:28:03.019+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:03.019+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:28:03.118+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.550 seconds
+[2025-04-18T10:28:40.737+0530] {processor.py:186} INFO - Started process (PID=24386) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:28:40.741+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:28:40.742+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:40.742+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:28:41.127+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:28:41.134+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:41.133+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:28:41.140+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:41.140+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:28:41.212+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.480 seconds
+[2025-04-18T10:29:22.230+0530] {processor.py:186} INFO - Started process (PID=24535) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:29:22.268+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:29:22.271+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:22.270+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:29:22.634+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:29:22.640+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:22.640+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:29:22.646+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:22.646+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:29:22.754+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.529 seconds
+[2025-04-18T10:30:00.519+0530] {processor.py:186} INFO - Started process (PID=24769) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:30:00.554+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:30:00.558+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:00.557+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:30:00.896+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:30:00.902+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:00.902+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:30:00.908+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:00.908+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:30:01.042+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.528 seconds
+[2025-04-18T10:30:39.659+0530] {processor.py:186} INFO - Started process (PID=24993) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:30:39.660+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py for tasks to queue
+[2025-04-18T10:30:39.661+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:39.661+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:30:40.006+0530] {processor.py:925} INFO - DAG(s) 'excel_data_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py
+[2025-04-18T10:30:40.013+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:40.012+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:30:40.019+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:40.019+0530] {dag.py:4180} INFO - Setting next_dagrun for excel_data_analysis to None, run_after=None
+[2025-04-18T10:30:40.120+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/file_manipulation.py took 0.464 seconds

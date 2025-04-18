@@ -1,0 +1,148 @@
+[2025-04-18T10:16:51.835+0530] {processor.py:186} INFO - Started process (PID=18220) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:16:51.835+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:16:51.836+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:51.836+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:16:54.102+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:16:54.292+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.292+0530] {override.py:1901} INFO - Created Permission View: can read on DAG:decoupled_excel_analysis
+[2025-04-18T10:16:54.349+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.348+0530] {override.py:1901} INFO - Created Permission View: can edit on DAG:decoupled_excel_analysis
+[2025-04-18T10:16:54.417+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.416+0530] {override.py:1901} INFO - Created Permission View: can delete on DAG:decoupled_excel_analysis
+[2025-04-18T10:16:54.543+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.542+0530] {override.py:1901} INFO - Created Permission View: can read on DAG Run:decoupled_excel_analysis
+[2025-04-18T10:16:54.600+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.599+0530] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:decoupled_excel_analysis
+[2025-04-18T10:16:54.656+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.655+0530] {override.py:1901} INFO - Created Permission View: can create on DAG Run:decoupled_excel_analysis
+[2025-04-18T10:16:54.723+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.723+0530] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:decoupled_excel_analysis
+[2025-04-18T10:16:54.724+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.723+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:16:54.737+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.737+0530] {dag.py:3262} INFO - Creating ORM DAG for decoupled_excel_analysis
+[2025-04-18T10:16:54.737+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:54.737+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:16:54.811+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 2.979 seconds
+[2025-04-18T10:18:05.771+0530] {processor.py:186} INFO - Started process (PID=19078) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:18:05.777+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:18:05.778+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:05.778+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:18:06.061+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:18:06.072+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:06.072+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:18:06.080+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:06.080+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:18:06.347+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.581 seconds
+[2025-04-18T10:18:45.287+0530] {processor.py:186} INFO - Started process (PID=19551) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:18:45.322+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:18:45.323+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:45.323+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:18:45.605+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:18:45.615+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:45.615+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:18:45.623+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:45.622+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:18:45.725+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.441 seconds
+[2025-04-18T10:19:25.473+0530] {processor.py:186} INFO - Started process (PID=20042) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:19:25.512+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:19:25.514+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:25.514+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:19:25.782+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:19:25.791+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:25.791+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:19:25.887+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:25.887+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:19:26.000+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.532 seconds
+[2025-04-18T10:19:36.549+0530] {processor.py:186} INFO - Started process (PID=20162) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:19:36.549+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:19:36.550+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:36.550+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:19:36.808+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:19:36.821+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:36.821+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:19:36.828+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:36.828+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:19:36.938+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.392 seconds
+[2025-04-18T10:20:47.693+0530] {processor.py:186} INFO - Started process (PID=20975) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:20:47.706+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:20:47.707+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:20:47.707+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:20:47.936+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:20:47.944+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:20:47.944+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:20:47.951+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:20:47.951+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:20:48.094+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.405 seconds
+[2025-04-18T10:21:34.249+0530] {processor.py:186} INFO - Started process (PID=21572) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:21:34.255+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:21:34.257+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:21:34.257+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:21:34.499+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:21:34.508+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:21:34.508+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:21:34.515+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:21:34.515+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:21:34.585+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.339 seconds
+[2025-04-18T10:22:23.738+0530] {processor.py:186} INFO - Started process (PID=22150) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:22:23.809+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:22:23.811+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:22:23.810+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:22:24.078+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:22:24.088+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:22:24.088+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:22:24.300+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:22:24.300+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:22:24.390+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.657 seconds
+[2025-04-18T10:23:24.762+0530] {processor.py:186} INFO - Started process (PID=22838) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:23:24.812+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:23:24.814+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:23:24.814+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:23:25.065+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:23:25.074+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:23:25.074+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:23:25.080+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:23:25.080+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:23:25.184+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.427 seconds
+[2025-04-18T10:24:02.947+0530] {processor.py:186} INFO - Started process (PID=23104) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:24:02.967+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:24:02.970+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:02.970+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:24:03.221+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:24:03.312+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:03.312+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:24:03.318+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:03.318+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:24:03.404+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.463 seconds
+[2025-04-18T10:24:42.582+0530] {processor.py:186} INFO - Started process (PID=23343) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:24:42.583+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:24:42.585+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:42.585+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:24:42.942+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:24:42.950+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:42.949+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:24:42.955+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:42.955+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:24:43.044+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.469 seconds
+[2025-04-18T10:25:20.997+0530] {processor.py:186} INFO - Started process (PID=23565) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:25:21.013+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:25:21.014+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:21.014+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:25:21.277+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:25:21.382+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:21.382+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:25:21.390+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:21.390+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:25:21.493+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.502 seconds
+[2025-04-18T10:25:59.192+0530] {processor.py:186} INFO - Started process (PID=23828) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:25:59.193+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:25:59.194+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:59.194+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:25:59.537+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:25:59.545+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:59.544+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:25:59.551+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:59.551+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:25:59.640+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.452 seconds
+[2025-04-18T10:26:38.235+0530] {processor.py:186} INFO - Started process (PID=23957) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:26:38.237+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:26:38.239+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:38.238+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:26:38.540+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:26:38.671+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:38.670+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:26:38.677+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:38.677+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:26:38.776+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.547 seconds
+[2025-04-18T10:27:20.668+0530] {processor.py:186} INFO - Started process (PID=24081) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:27:20.700+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:27:20.702+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:27:20.701+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:27:21.092+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:27:21.102+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:27:21.101+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:27:21.108+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:27:21.108+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:27:21.209+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.548 seconds
+[2025-04-18T10:28:00.872+0530] {processor.py:186} INFO - Started process (PID=24208) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:28:00.904+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:28:00.908+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:00.907+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:28:01.310+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:28:01.319+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:01.318+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:28:01.331+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:01.330+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:28:01.431+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.563 seconds
+[2025-04-18T10:28:39.263+0530] {processor.py:186} INFO - Started process (PID=24384) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:28:39.296+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:28:39.298+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:39.298+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:28:39.634+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:28:39.642+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:39.641+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:28:39.647+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:39.647+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:28:39.776+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.517 seconds
+[2025-04-18T10:29:20.665+0530] {processor.py:186} INFO - Started process (PID=24524) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:29:20.681+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:29:20.685+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:20.684+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:29:20.998+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:29:21.005+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:21.005+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:29:21.010+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:21.010+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:29:21.100+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.439 seconds
+[2025-04-18T10:29:58.910+0530] {processor.py:186} INFO - Started process (PID=24768) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:29:58.940+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:29:58.943+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:58.943+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:29:59.262+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:29:59.269+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:59.268+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:29:59.274+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:59.274+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:29:59.388+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.482 seconds
+[2025-04-18T10:30:38.910+0530] {processor.py:186} INFO - Started process (PID=24957) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:30:38.910+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py for tasks to queue
+[2025-04-18T10:30:38.912+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:38.911+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:30:39.295+0530] {processor.py:925} INFO - DAG(s) 'decoupled_excel_analysis' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py
+[2025-04-18T10:30:39.303+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:39.303+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:30:39.309+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:39.309+0530] {dag.py:4180} INFO - Setting next_dagrun for decoupled_excel_analysis to None, run_after=None
+[2025-04-18T10:30:39.413+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/decoupled_dag.py took 0.507 seconds

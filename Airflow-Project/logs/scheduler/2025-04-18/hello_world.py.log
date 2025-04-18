@@ -1,0 +1,140 @@
+[2025-04-18T10:16:59.968+0530] {processor.py:186} INFO - Started process (PID=18337) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:16:59.968+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:16:59.969+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:59.969+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:16:59.978+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:16:59.991+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:16:59.991+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:17:00.003+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:17:00.003+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:17:00.081+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.118 seconds
+[2025-04-18T10:18:09.376+0530] {processor.py:186} INFO - Started process (PID=19113) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:18:09.416+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:18:09.418+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:09.417+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:18:09.435+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:18:09.444+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:09.444+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:18:09.458+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:09.458+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:18:09.528+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.156 seconds
+[2025-04-18T10:18:48.545+0530] {processor.py:186} INFO - Started process (PID=19557) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:18:48.578+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:18:48.580+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:48.579+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:18:48.596+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:18:48.609+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:48.609+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:18:48.622+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:18:48.622+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:18:48.689+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.149 seconds
+[2025-04-18T10:19:27.945+0530] {processor.py:186} INFO - Started process (PID=20049) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:19:27.979+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:19:27.981+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:27.980+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:19:27.993+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:19:28.005+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:28.005+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:19:28.020+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:28.020+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:19:28.088+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.148 seconds
+[2025-04-18T10:19:39.628+0530] {processor.py:186} INFO - Started process (PID=20186) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:19:39.629+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:19:39.631+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:39.630+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:19:39.643+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:19:39.660+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:39.660+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:19:39.672+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:19:39.672+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:19:39.739+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.119 seconds
+[2025-04-18T10:20:50.174+0530] {processor.py:186} INFO - Started process (PID=21013) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:20:50.239+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:20:50.242+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:20:50.241+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:20:50.251+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:20:50.262+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:20:50.262+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:20:50.273+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:20:50.273+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:20:50.386+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.216 seconds
+[2025-04-18T10:21:36.530+0530] {processor.py:186} INFO - Started process (PID=21644) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:21:36.540+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:21:36.542+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:21:36.542+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:21:36.550+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:21:36.559+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:21:36.559+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:21:36.571+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:21:36.571+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:21:36.651+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.124 seconds
+[2025-04-18T10:22:29.819+0530] {processor.py:186} INFO - Started process (PID=22265) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:22:29.832+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:22:29.834+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:22:29.833+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:22:29.842+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:22:29.852+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:22:29.852+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:22:29.863+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:22:29.863+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:22:29.925+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.110 seconds
+[2025-04-18T10:23:27.884+0530] {processor.py:186} INFO - Started process (PID=22867) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:23:27.890+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:23:27.892+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:23:27.892+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:23:27.899+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:23:27.908+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:23:27.908+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:23:27.919+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:23:27.919+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:23:27.994+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.116 seconds
+[2025-04-18T10:24:05.989+0530] {processor.py:186} INFO - Started process (PID=23139) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:24:06.005+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:24:06.006+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:06.006+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:24:06.013+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:24:06.024+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:06.024+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:24:06.036+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:06.036+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:24:06.114+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.129 seconds
+[2025-04-18T10:24:45.790+0530] {processor.py:186} INFO - Started process (PID=23407) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:24:45.791+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:24:45.793+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:45.793+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:24:45.799+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:24:45.807+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:45.807+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:24:45.818+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:24:45.818+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:24:45.930+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.144 seconds
+[2025-04-18T10:25:24.341+0530] {processor.py:186} INFO - Started process (PID=23576) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:25:24.351+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:25:24.352+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:24.352+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:25:24.358+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:25:24.369+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:24.369+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:25:24.381+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:25:24.381+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:25:24.457+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.120 seconds
+[2025-04-18T10:26:01.948+0530] {processor.py:186} INFO - Started process (PID=23857) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:26:01.950+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:26:01.951+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:01.951+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:26:01.960+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:26:01.972+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:01.972+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:26:01.986+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:01.985+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:26:02.055+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.113 seconds
+[2025-04-18T10:26:41.650+0530] {processor.py:186} INFO - Started process (PID=23998) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:26:41.652+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:26:41.654+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:41.654+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:26:41.660+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:26:41.673+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:41.673+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:26:41.686+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:26:41.686+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:26:41.790+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.145 seconds
+[2025-04-18T10:27:23.967+0530] {processor.py:186} INFO - Started process (PID=24084) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:27:23.986+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:27:23.989+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:27:23.988+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:27:23.996+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:27:24.006+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:27:24.006+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:27:24.017+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:27:24.017+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:27:24.112+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.148 seconds
+[2025-04-18T10:28:03.619+0530] {processor.py:186} INFO - Started process (PID=24212) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:28:03.660+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:28:03.662+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:03.661+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:28:03.669+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:28:03.682+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:03.682+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:28:03.697+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:03.697+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:28:03.775+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.160 seconds
+[2025-04-18T10:28:42.392+0530] {processor.py:186} INFO - Started process (PID=24393) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:28:42.430+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:28:42.434+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:42.433+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:28:42.450+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:28:42.459+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:42.459+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:28:42.469+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:28:42.469+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:28:42.543+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.155 seconds
+[2025-04-18T10:29:22.959+0530] {processor.py:186} INFO - Started process (PID=24539) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:29:23.001+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:29:23.004+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:23.004+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:29:23.016+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:29:23.030+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:23.030+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:29:23.043+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:29:23.043+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:29:23.124+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.169 seconds
+[2025-04-18T10:30:02.271+0530] {processor.py:186} INFO - Started process (PID=24801) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:30:02.310+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:30:02.314+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:02.313+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:30:02.331+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:30:02.341+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:02.341+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:30:02.351+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:02.351+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:30:02.436+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.171 seconds
+[2025-04-18T10:30:41.286+0530] {processor.py:186} INFO - Started process (PID=24995) to work on /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:30:41.287+0530] {processor.py:914} INFO - Processing file /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py for tasks to queue
+[2025-04-18T10:30:41.289+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:41.288+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:30:41.295+0530] {processor.py:925} INFO - DAG(s) 'hello_world_dag' retrieved from /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py
+[2025-04-18T10:30:41.306+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:41.305+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-18T10:30:41.317+0530] {logging_mixin.py:190} INFO - [2025-04-18T10:30:41.317+0530] {dag.py:4180} INFO - Setting next_dagrun for hello_world_dag to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T10:30:41.419+0530] {processor.py:208} INFO - Processing /home/prakhar/Desktop/Bootcamp/Python/Airflow-Project/dags/hello_world.py took 0.137 seconds
